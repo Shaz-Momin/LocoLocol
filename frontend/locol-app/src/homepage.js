@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export const HomepgSTYLEDRootRoot1 = ({}) => {
+export const Homepage_Root = ({}) => {
   return (
     <HomepgSTYLEDRootRootRoot>
       <NewGroup>
