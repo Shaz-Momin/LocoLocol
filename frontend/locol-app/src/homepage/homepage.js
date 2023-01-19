@@ -61,7 +61,7 @@ export const Homepage = ({}) => {
                                     src={`https://file.rendit.io/n/Ajesrz3rzUIAbOMJCQRR.svg`}
                                 />
                             </Group4>
-                            <Text14>Marketplace</Text14>
+                            <Text14 to="/marketplace">Marketplace</Text14>
                             <Chevronright
                                 src={`https://file.rendit.io/n/L6D9U86zi9xQG83Fl6Vj.svg`}
                             />
