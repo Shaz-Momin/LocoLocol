@@ -8,6 +8,10 @@ import { Signup_type_of_account } from "./signup/what_type_of_account/signup_typ
 import { Signup_education } from "./signup/education/signup_education";
 import { Signup_about_you } from "./signup/about_you/signup_about_you";
 import { Signup_create } from "./signup/create/signup_create";
+import { Calendar } from "./calendar/calendar";
+import { Services } from "./services/services";
+import { Student_profile } from "./student_profile/student_profile";
+import { Business_profile } from "./business_profile/business_profile";
 import {Route, Routes, BrowserRouter} from 'react-router-dom';
 
 export default function App() {
@@ -27,6 +31,10 @@ export default function App() {
                 <Route path="/signup_education" element={<Signup_education/>} />
                 <Route path="/signup_about_you" element={<Signup_about_you/>} />
                 <Route path="/signup_create" element={<Signup_create/>} />
+                <Route path="/calendar" element={<Calendar/>} />
+                <Route path="/services" element={<Services/>} />
+                <Route path="/student_profile" element={<Student_profile/>} />
+                <Route path="/business_profile" element={<Business_profile/>} />
             </Routes>
         </BrowserRouter>
     );
