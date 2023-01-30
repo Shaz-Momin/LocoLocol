@@ -6,6 +6,16 @@ import { Homepage } from "./homepage/homepage";
 import { Marketplace } from "./marketplace/marketplace";
 import { Board } from "./board/board";
 import { Community } from "./community/community";
+import { Login } from "./login/login";
+import { Signup_what_are_you } from "./signup/what_are_you/signup_what_are_you";
+import { Signup_type_of_account } from "./signup/what_type_of_account/signup_type_of_account";
+import { Signup_education } from "./signup/education/signup_education";
+import { Signup_about_you } from "./signup/about_you/signup_about_you";
+import { Signup_create } from "./signup/create/signup_create";
+import { Calendar } from "./calendar/calendar";
+import { Services } from "./services/services";
+import { Student_profile } from "./student_profile/student_profile";
+import { Business_profile } from "./business_profile/business_profile";
 import styled from "styled-components";
 
 
@@ -23,7 +33,17 @@ const RoutesContainer = (props: {}) => {
     ["Home", "/home"],
     ["Marketplace", "/market"],
     ["Board", "/board"],
-    ["Community", "/community"]
+    ["Community", "/community"],
+    ["Login", "/login"],
+    ["Signin", "/signup_person"], 
+    // ["Account", "/signup_account"],
+    // ["Education", "/signup_education"],
+    // ["About", "/signup_about_you"],
+    // ["Create", "/signup_create"],
+    // ["Calendar", "/calendar"],
+    // ["Services", "/services"],
+    // ["StudentProfile", "/student_profile"],
+    // ["BusinessProfile", "/business_profile"] 
   ];
 
   const path = useLocation().pathname;
@@ -41,6 +61,16 @@ const RoutesContainer = (props: {}) => {
           <Route path={"/market"} element={<Marketplace />} />
           <Route path={"/board"} element={<Board />} />
           <Route path={"/community"} element={<Community />} />
+          <Route path={"/login"} element={<Login/>} />
+          <Route path={"/signup_person"} element={<Signup_what_are_you/>} />
+          <Route path={"/signup_account"} element={<Signup_type_of_account/>} />
+          <Route path={"/signup_education"} element={<Signup_education/>} />
+          <Route path={"/signup_about_you"} element={<Signup_about_you/>} />
+          <Route path={"/signup_create"} element={<Signup_create/>} />
+          <Route path={"/calendar"} element={<Calendar/>} />
+          <Route path={"/services"} element={<Services/>} />
+          <Route path={"/student_profile"} element={<Student_profile/>} />
+          <Route path={"/business_profile"} element={<Business_profile/>} />
         </Routes>
       </div>
     </Fragment>
