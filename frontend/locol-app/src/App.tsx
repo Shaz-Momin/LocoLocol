@@ -35,7 +35,7 @@ const RoutesContainer = (props: {}) => {
     ["Board", "/board"],
     ["Community", "/community"],
     ["Login", "/login"],
-    ["Signin", "/signup_person"], 
+    ["Signup", "/signup_person"], 
     // ["Account", "/signup_account"],
     // ["Education", "/signup_education"],
     // ["About", "/signup_about_you"],
@@ -54,7 +54,7 @@ const RoutesContainer = (props: {}) => {
       <div className="content">
         <Navbar options={links} currPath={path} simple={onLoginPage} />
 
-        <div>current path: {path}</div>
+        {/* <div>current path: {path}</div> */}
         <Routes>
           <Route path={"/"} element={<Homepage />} />
           <Route path={"/home"} element={<Homepage />} />
