@@ -420,7 +420,8 @@ const Group36 = styled.div`
 const FlexRow = styled.div`
   // width: 1345px;
   flex-grow: 1;
-  width: 81%;
+  // width: 81%;
+  width: 100%l
   height: 421px;
   left: 0px;
   top: 117px;
@@ -804,7 +805,8 @@ const Line2 = styled.div`
 `;
 const WhiteFlexColumn = styled.div`
   // width: 996px;
-  width: 57%;
+  // width: 57%;
+  width: 100%;
   height: 139px;
   position: relative;
   gap: 39px;
@@ -817,7 +819,8 @@ const WhiteFlexColumn = styled.div`
 `;
 const Group5 = styled.div`
   // width: 583px;
-  width: 81%;
+  // width: 81%;
+  width: 100%;
   height: 43px;
   display: flex;
   flex-direction: row;
@@ -827,7 +830,8 @@ const Group5 = styled.div`
 `;
 const Group6 = styled.div`
   // width: 222px;
-  width: 81%;
+  // width: 81%;
+  width: 100%;
   height: 43px;
   gap: 17px;
   display: flex;
@@ -1151,7 +1155,7 @@ const FlexRow8 = styled.div`
   // width: 1352px;
   // width: 81.5%;
   // height: 382px;
-  width: auto;
+  width: 100%;
   gap: 43px;
   display: flex;
   flex-direction: "row";
