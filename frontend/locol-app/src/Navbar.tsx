@@ -6,7 +6,7 @@ import {
   IconButton,
   Menu,
   Toolbar,
-} from "@material-ui/core";
+} from "@mui/material";
 import { fontSize } from "@mui/system";
 import React, { CSSProperties } from "react";
 import { useNavigate } from "react-router-dom";
