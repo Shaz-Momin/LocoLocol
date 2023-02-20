@@ -1,17 +1,84 @@
 import React from "react";
 import styled from "styled-components";
+import { InputAdornment, Button, TextField } from "@mui/material";
+import Visibility from "@mui/icons-material/Visibility";
+
+
+import "./login.css";
 
 export const Login = ({}) => {
     const FlexColumn1Function = (e, name) => {
         alert(`${name} was clicked`);
     };
     return (
-        <LoginRootRootRoot>
-            <Background>
-                <Panel>
-                    <Text1>Sign in</Text1>
-                    <Text2>to your Locol account</Text2>
-                    <Text3>Email:</Text3>
+        <div id="LoginPage">
+            <div id = "Background">
+                <div className = "Panel">
+                  <text10>Welcome Back!</text10>
+                  <text1>Sign in</text1>
+                  <text2>to your Locol account</text2>
+                  <text3>Email:</text3>
+                  <div className = "tf-outer">
+                  <TextField 
+                    className = "tf-inner"
+                    // width = "64.1%"
+                    // height = "40"
+                    variant="outlined"
+                    // margin="0px 0px 3.08% 16.95%"
+                    // borderWidth = "1px"
+                    // border-radius = "10px"
+
+                    /*
+                    width: 64.1%;
+  height: 40px;
+  margin: 0px 0px 3.08% 16.95%;
+  border-width: 1px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #bdbdbd;
+  box-shadow: 0px 5px 25px 0px #02375f;
+                    */
+                    />
+                    </div>
+                    <text4>Password</text4>
+                    <div className = "tf-outer">
+                      <TextField className = "tf-inner"
+                      variant = "outlined" 
+                      // InputProps={{
+                      //   endAdornment: (
+                      //     <InputAdornment position="end" style={{ cursor: "pointer"}}>
+                      //       <Visibility
+                      //         onMouseDown={() => this.toggleShowPassword()}
+                      //         onMouseUp={() => this.toggleShowPassword()}
+                      //       />
+                      //     </InputAdornment>
+                      //   ),
+                      // }}
+                      // type={this.state.showPassword ? "text" : "password"}
+                      // value={this.state.password}
+                      // onChange={(e) => this.changePassword(e.target.value)}
+                       />
+                       <div className = "FlexColumn1">
+                        <text5>Login</text5>
+                       </div>
+
+                       {/* <text6>Don't have an account?
+                        { <text8 onClick={this.handleClick}>Sign up</text8> }
+                       </text6> */}
+{/* 
+                    <FlexColumn1 onClick={(e) => FlexColumn1Function(e, "FlexColumn1")}>
+                        <text5>Login</text5>
+                    </FlexColumn1> */}
+
+                    </div>
+
+                    {/* <IconsaxLineareye
+                            src={`https://file.rendit.io/n/InxojZGgvxtK7t5awRLt.svg`}
+                        /> */}
+
+                    
+                    {/* 
+
                     <Element1 />
                     <Text4>Password</Text4>
                     <FlexColumn>
@@ -29,13 +96,14 @@ export const Login = ({}) => {
                     </Text6>
                     <ForgotPassword1>
                         Forgot password<ForgotPassword>?</ForgotPassword>
-                    </ForgotPassword1>
-                </Panel>
-                <Text10>Welcome Back!</Text10>
-            </Background>
-        </LoginRootRootRoot>
+                    </ForgotPassword1> */}
+                </div>
+            </div>
+        </div>
     );
 };
+
+
 
 const LoginRootRootRoot = styled.div`
   display: flex;
@@ -44,18 +112,6 @@ const LoginRootRootRoot = styled.div`
   align-items: flex-start;
   background-color: #ffffff;
   overflow: hidden;
-`;
-const Background = styled.div`
-  width: 45.07%;
-  height: 608px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 15.21% 27.43% 15.21% 27.5%;
-  background-size: cover;
-  background-image: url("https://file.rendit.io/n/ecNOoEwBfr1h6dY9RzP0.svg");
 `;
 const Panel = styled.div`
   height: 389px;
@@ -219,12 +275,4 @@ const ForgotPassword = styled.div`
   text-decoration-line: underline;
 `;
 const Text10 = styled.div`
-  width: 100%;
-  height: 22px;
-  position: relative;
-  font-size: 17px;
-  font-weight: 600;
-  font-family: Montserrat;
-  line-height: 21.57300090789795px;
-  text-align: center;
 `;
