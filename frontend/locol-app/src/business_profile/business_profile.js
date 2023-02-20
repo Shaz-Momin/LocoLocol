@@ -31,7 +31,7 @@ export const Business_profile = ({}) => {
                                     />
                                     <BlackFlexColumn2>
                                         <Image3
-                                            src={`https://file.rendit.io/n/KFBc9FqWSIyisOlk4iU5.svg`}
+                                            src={`https://media.licdn.com/dms/image/C4E0BAQHUZlCfrDe6cA/company-logo_200_200/0/1660232679097?e=1684972800&v=beta&t=iUf43s86QaPtFKKNNUfNUzaEPmnAZN2GIjQQCHVJ2E8`}
                                         />
                                     </BlackFlexColumn2>
                                 </BlackFlexColumn1>
@@ -67,30 +67,30 @@ export const Business_profile = ({}) => {
                         <Ellipse1
                             src={`https://file.rendit.io/n/fRxpumon830I1UHbRlTj.svg`}
                         />
-                        <Navigation>
-                            <Logo>
-                                <LocolBlue
-                                    src={`https://file.rendit.io/n/YEvxKtvA2s3ZyCjS2X1j.png`}
-                                />
-                            </Logo>
-                            <Text5>Dashboard</Text5>
-                            <Group42>
-                                <Text6>Home</Text6>
-                                <Image5
-                                    src={`https://file.rendit.io/n/3gLbkDtsnosE4ibUBMP2.svg`}
-                                />
-                            </Group42>
-                            <Text7>Marketplace</Text7>
-                            <Chevronright
-                                src={`https://file.rendit.io/n/TyY7Zrh7O2n8wg3kGm6l.svg`}
-                            />
-                            <Text8>Board</Text8>
-                            <Chevronright1
-                                src={`https://file.rendit.io/n/TyY7Zrh7O2n8wg3kGm6l.svg`}
-                            />
-                            <Text9>Community</Text9>
-                            <Element1 />
-                        </Navigation>
+                        {/*<Navigation>*/}
+                        {/*    <Logo>*/}
+                        {/*        <LocolBlue*/}
+                        {/*            src={`https://file.rendit.io/n/YEvxKtvA2s3ZyCjS2X1j.png`}*/}
+                        {/*        />*/}
+                        {/*    </Logo>*/}
+                        {/*    <Text5>Dashboard</Text5>*/}
+                        {/*    <Group42>*/}
+                        {/*        <Text6>Home</Text6>*/}
+                        {/*        <Image5*/}
+                        {/*            src={`https://file.rendit.io/n/3gLbkDtsnosE4ibUBMP2.svg`}*/}
+                        {/*        />*/}
+                        {/*    </Group42>*/}
+                        {/*    <Text7>Marketplace</Text7>*/}
+                        {/*    <Chevronright*/}
+                        {/*        src={`https://file.rendit.io/n/TyY7Zrh7O2n8wg3kGm6l.svg`}*/}
+                        {/*    />*/}
+                        {/*    <Text8>Board</Text8>*/}
+                        {/*    <Chevronright1*/}
+                        {/*        src={`https://file.rendit.io/n/TyY7Zrh7O2n8wg3kGm6l.svg`}*/}
+                        {/*    />*/}
+                        {/*    <Text9>Community</Text9>*/}
+                        {/*    <Element1 />*/}
+                        {/*</Navigation>*/}
                     </Group39>
                     <WhiteFlexColumn>
                         <Group43>
@@ -108,11 +108,15 @@ export const Business_profile = ({}) => {
                                 <Text14>MISSION</Text14>
                             </Group47>
                             <Paragraph>
-                                The company mission and information about what this business
-                                offers. We are looking for students offering services. We are
-                                located in Austin, TX. The company mission and information about
-                                what this business offers. We are looking for students offering
-                                services. We are located in Austin, TX. <br />
+                                Welcome to the Locol, the freelance marketplace
+                                connecting small businesses in need of an affordable
+                                marketing solution with college students from the top universities.
+                                Search from a variety of digital marketing services relevant to your business needs,
+                                and find a freelancer who can perform these services for you.
+                                The company mission and information about what this business offers.
+                                Our trust-driven platform ensures the highest quality digital marketing
+                                services from our student freelancers to best serve small business communities
+                                across the country. At Locol, our mission is to start small to build big.  <br />
                                 <br />
                                 The company mission and information about what this business
                                 offers. We are looking for students offering services. We are
