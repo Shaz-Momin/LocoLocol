@@ -418,7 +418,13 @@ const Group36 = styled.div`
   align-self: flex-start;
 `;
 const FlexRow = styled.div`
-  width: 1000%;  
+  // width: 1345px;
+  flex-grow: 1;
+  // width: 81%;
+  width: 100%l
+  height: 421px;
+  left: 0px;
+  top: 117px;
   position: absolute;
   display: flex;
   flex-direction: "row";
@@ -888,17 +894,17 @@ const Paragraph = styled.div`
   line-height: 25px;
 `;
 const MidnightBlueFlexColumn = styled.div`
-// width: 1350px;
+  // width: 1350px;
   // width: 81%;
-  width: 110%;
+  width: 100%;
   box-sizing: border-box;
   height: 450px;
   position: relative;
   display: flex;
-  flex-direction: "row";
-  // justify-content: flex-start;
-  align-self: "flex-start";
-  // padding: 41px 45px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: flex-start;
+  //padding: 41px 45px;
   background-color: #00416b;
 `;
 const Group8 = styled.div`
