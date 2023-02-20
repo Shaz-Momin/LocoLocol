@@ -49,8 +49,8 @@ export const Homepage = ({}) => {
                         <Businesspic
                             src={`https://file.rendit.io/n/L32wadTu6UIiGRTwo0Wx.png`}
                         />
-                        <Navigation>
-                            <Logo>
+                        {/* <Navigation> */}
+                            {/* <Logo>
                                 <LocolBlue1
                                     src={`https://file.rendit.io/n/trC8644Fp3YAsjuSndcy.png`}
                                 />
@@ -72,8 +72,8 @@ export const Homepage = ({}) => {
                             <Text16>Community</Text16>
                             <Text17>Login</Text17>
                             <Login>Sign Up</Login>
-                            <Line2 />
-                        </Navigation>
+                            <Line2 /> */}
+                        {/* </Navigation> */}
                     </Group3>
                     <WhiteFlexColumn>
                         <Group5>
@@ -99,7 +99,7 @@ export const Homepage = ({}) => {
                     </WhiteFlexColumn>
                 </Group>
                 <MidnightBlueFlexColumn>
-                    <Group8>
+                    {/* <Group8>
                         <Group10>
                             <Text20>MARKETPLACE</Text20>
                             <StudentsAreOffering2>
@@ -147,7 +147,7 @@ export const Homepage = ({}) => {
                             </Group12>
                         </FlexColumn10>
                     </Group9>
-                    <Element2 src={`https://file.rendit.io/n/nruRJRB2FKY411vHQfDA.svg`} />
+                    <Element2 src={`https://file.rendit.io/n/nruRJRB2FKY411vHQfDA.svg`} /> */}
                 </MidnightBlueFlexColumn>
             </Group36>
             <FlexRow8>
@@ -397,13 +397,15 @@ export const Homepage = ({}) => {
 };
 
 const HomepgSTYLEDRootRoot = styled.div`
-  width: 1440px;
+  // width: 1440px;
+  width: 100%;
   height: 2687px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background-color: #ffffff;
   overflow: hidden;
+  // box-sizing: border-box;
 `;
 const Group36 = styled.div`
   width: 1440px;
@@ -416,13 +418,11 @@ const Group36 = styled.div`
   align-self: flex-start;
 `;
 const FlexRow = styled.div`
-  width: 1345px;
-  height: 421px;
-  left: 0px;
-  top: 117px;
+  width: 1000%;  
   position: absolute;
   display: flex;
-  flex-direction: row;
+  flex-direction: "row";
+  align-self: "flex-start";
   justify-content: space-between;
   padding: 174px 47px 149px 48px;
   background-size: cover;
@@ -649,21 +649,21 @@ const Businesspic = styled.img`
   top: 110px;
   position: absolute;
 `;
-const Navigation = styled.div`
-  width: 1390px;
-  height: 88px;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-self: flex-start;
-  padding: 21px 25px 7.25px 25px;
-  border-width: 0px 0px 0.75px 0px;
-  border-style: solid;
-  border-color: #afafaf;
-  background-color: #fcf8f5;
-  overflow: hidden;
-`;
+// const Navigation = styled.div`
+//   width: 1590px;
+//   height: 88px;
+//   position: relative;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: flex-start;
+//   align-self: flex-start;
+//   padding: 21px 25px 7.25px 25px;
+//   border-width: 0px 0px 0.75px 0px;
+//   border-style: solid;
+//   border-color: #afafaf;
+//   background-color: #fcf8f5;
+//   overflow: hidden;
+// `;
 const Logo = styled.div`
   width: 126px;
   height: 77px;
@@ -799,7 +799,9 @@ const Line2 = styled.div`
   border-color: #ca8342;
 `;
 const WhiteFlexColumn = styled.div`
-  width: 996px;
+  // width: 996px;
+  // width: 57%;
+  width: 100%;
   height: 139px;
   position: relative;
   gap: 39px;
@@ -811,7 +813,9 @@ const WhiteFlexColumn = styled.div`
   background-color: rgba(252, 248, 245, 0.75);
 `;
 const Group5 = styled.div`
-  width: 583px;
+  // width: 583px;
+  // width: 81%;
+  width: 100%;
   height: 43px;
   display: flex;
   flex-direction: row;
@@ -820,7 +824,9 @@ const Group5 = styled.div`
   padding: 0px 413px 0px 0px;
 `;
 const Group6 = styled.div`
-  width: 222px;
+  // width: 222px;
+  // width: 81%;
+  width: 100%;
   height: 43px;
   gap: 17px;
   display: flex;
@@ -882,14 +888,17 @@ const Paragraph = styled.div`
   line-height: 25px;
 `;
 const MidnightBlueFlexColumn = styled.div`
-  width: 1350px;
+// width: 1350px;
+  // width: 81%;
+  width: 110%;
+  box-sizing: border-box;
   height: 450px;
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-self: flex-start;
-  padding: 41px 45px;
+  flex-direction: "row";
+  // justify-content: flex-start;
+  align-self: "flex-start";
+  // padding: 41px 45px;
   background-color: #00416b;
 `;
 const Group8 = styled.div`
@@ -1138,13 +1147,15 @@ const Element2 = styled.img`
   margin: 0px 3px 0px 0px;
 `;
 const FlexRow8 = styled.div`
-  width: 1352px;
-  height: 382px;
+  // width: 1352px;
+  // width: 81.5%;
+  // height: 382px;
+  width: 100%;
   gap: 43px;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-self: flex-start;
+  flex-direction: "row";
+  // justify-content: flex-start;
+  align-self: "flex-start";
   margin: 0px 0px 66px 0px;
   padding: 37px 43px 70px 45px;
   background-size: cover;
