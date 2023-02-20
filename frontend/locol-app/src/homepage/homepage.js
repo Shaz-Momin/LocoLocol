@@ -427,7 +427,8 @@ const FlexRow = styled.div`
   top: 117px;
   position: absolute;
   display: flex;
-  flex-direction: row;
+  flex-direction: "row";
+  align-self: "flex-start";
   justify-content: space-between;
   padding: 174px 47px 149px 48px;
   background-size: cover;
