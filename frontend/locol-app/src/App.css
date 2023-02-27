@@ -1,5 +1,7 @@
 body {
-  background-color: rgb(185, 99, 0);
+  /* background-color: rgb(185, 99, 0); */
+  background-image: url("https://file.rendit.io/n/ecNOoEwBfr1h6dY9RzP0.svg");
+  background-size: cover;
 }
 
 .App {

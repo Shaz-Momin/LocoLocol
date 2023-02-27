@@ -1,83 +1,58 @@
 import React from "react";
 import styled from "styled-components";
-import { InputAdornment, Button, TextField } from "@mui/material";
+import { InputAdornment, Button, TextField, Input } from "@mui/material";
 import Visibility from "@mui/icons-material/Visibility";
-
 
 import "./login.css";
 
 export const Login = ({}) => {
-    const FlexColumn1Function = (e, name) => {
-        alert(`${name} was clicked`);
-    };
-    return (
-        <div id="LoginPage">
-            <div id = "Background">
-                <div className = "Panel">
-                  <text10>Welcome Back!</text10>
-                  <text1>Sign in</text1>
-                  <text2>to your Locol account</text2>
-                  <text3>Email:</text3>
-                  <div className = "tf-outer">
-                  <TextField 
-                    className = "tf-inner"
-                    // width = "64.1%"
-                    // height = "40"
-                    variant="outlined"
-                    // margin="0px 0px 3.08% 16.95%"
-                    // borderWidth = "1px"
-                    // border-radius = "10px"
-
-                    /*
-                    width: 64.1%;
-  height: 40px;
-  margin: 0px 0px 3.08% 16.95%;
-  border-width: 1px;
-  border-radius: 20px;
-  border-style: solid;
-  border-color: #bdbdbd;
-  box-shadow: 0px 5px 25px 0px #02375f;
-                    */
-                    />
-                    </div>
-                    <text4>Password</text4>
-                    <div className = "tf-outer">
-                      <TextField className = "tf-inner"
-                      variant = "outlined" 
-                      // InputProps={{
-                      //   endAdornment: (
-                      //     <InputAdornment position="end" style={{ cursor: "pointer"}}>
-                      //       <Visibility
-                      //         onMouseDown={() => this.toggleShowPassword()}
-                      //         onMouseUp={() => this.toggleShowPassword()}
-                      //       />
-                      //     </InputAdornment>
-                      //   ),
-                      // }}
-                      // type={this.state.showPassword ? "text" : "password"}
-                      // value={this.state.password}
-                      // onChange={(e) => this.changePassword(e.target.value)}
-                       />
-                       <div className = "FlexColumn1">
-                        <text5>Login</text5>
-                       </div>
-
-                       {/* <text6>Don't have an account?
-                        { <text8 onClick={this.handleClick}>Sign up</text8> }
-                       </text6> */}
-{/* 
-                    <FlexColumn1 onClick={(e) => FlexColumn1Function(e, "FlexColumn1")}>
-                        <text5>Login</text5>
-                    </FlexColumn1> */}
-
-                    </div>
-
-                    {/* <IconsaxLineareye
-                            src={`https://file.rendit.io/n/InxojZGgvxtK7t5awRLt.svg`}
-                        /> */}
-
-                    
-                    {/* 
+  const FlexColumn1Function = (e, name) => {
+    alert(`${name} was clicked`);
+  };
+  return (
+    <div id="LoginPage">
+      <div id="Background">
+        <div id="Panel">
+            <text10>Welcome Back!</text10>
+          
+          <text1>Sign in</text1>
+          <text2>to your Locol account</text2>
+          <text3>Email:</text3>
+          <div className="tf-outer">
+            <TextField
+              className="tf-inner"
+              variant="outlined"
+              position="absolute"
+            />
+            </div>
+            <text4>Password</text4>
+            <div className="tf-outer">
+             <TextField
+              className="tf-inner"
+              variant="outlined"
+              position="absolute"
+              InputProps={{endAdornment: (<InputAdornment position="end" style = {{cursor: "pointer"}}>
+                <Visibility 
+                  onMouseDown={() => this.toggleShowPassword()}
+                  onMouseUp={() => this.toggleShowPassword()}
+                  />
+              </InputAdornment>)}}
+              // InputProps={{
+              //   endAdornment: (
+              //     <InputAdornment position="end" style={{ cursor: "pointer"}}>
+              //       <Visibility
+              //         onMouseDown={() => this.toggleShowPassword()}
+              //         onMouseUp={() => this.toggleShowPassword()}
+              //       />
+              //     </InputAdornment>
+              //   ),
+              // }}
+              // type={this.state.showPassword ? "text" : "password"}
+              // value={this.state.password}
+              // onChange={(e) => this.changePassword(e.target.value)}
+            />
+            
+          {/* 
 
                     <Element1 />
                     <Text4>Password</Text4>
@@ -85,25 +60,20 @@ export const Login = ({}) => {
                         <IconsaxLineareye
                             src={`https://file.rendit.io/n/InxojZGgvxtK7t5awRLt.svg`}
                         />
-                    </FlexColumn>
-                    <FlexColumn1 onClick={(e) => FlexColumn1Function(e, "FlexColumn1")}>
-                        <Text5>Login</Text5>
-                    </FlexColumn1>
-                    <Text6>
-                        Don’t have an account?<Text7> </Text7>
-                        <Text8>Sign Up</Text8>
-                        <Text9> instead.</Text9>
-                    </Text6>
-                    <ForgotPassword1>
-                        Forgot password<ForgotPassword>?</ForgotPassword>
-                    </ForgotPassword1> */}
-                </div>
-            </div>
+                    </FlexColumn> */}
+                    </div>
+                    <div className="FlexColumn1">
+                      <text5>Login</text5>
+                    </div>
+            <text6>Don't have an account?  
+              <a href="/signup_person"> Sign Up</a> instead.
+              <div><a href="/home">Forgot Password?</a></div> {/*change the url*/}
+            </text6>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
-
-
 
 const LoginRootRootRoot = styled.div`
   display: flex;
@@ -194,35 +164,7 @@ const IconsaxLineareye = styled.img`
   width: 100%;
   height: 24px;
 `;
-const FlexColumn1 = styled.button`
-  height: 42px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-self: center;
-  align-items: flex-start;
-  margin: 0px 0px 2.47% 0px;
-  padding: 0px;
-  border-width: 0px;
-  box-sizing: content-box;
-  background-color: transparent;
-  background-size: cover;
-  background-image: url("https://file.rendit.io/n/twftZqve3pdnNvT0JCd5.svg");
-  cursor: pointer;
-  &: hover {
-    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
-  } ;
-`;
-const Text5 = styled.div`
-  width: 100%;
-  height: 41px;
-  color: #fefdfb;
-  font-size: 15px;
-  font-weight: 700;
-  font-family: Montserrat;
-  line-height: 40.5px;
-  text-align: center;
-`;
+
 const Text6 = styled.div`
   width: 34.82%;
   height: 13px;
@@ -274,5 +216,4 @@ const ForgotPassword = styled.div`
   font-family: Montserrat;
   text-decoration-line: underline;
 `;
-const Text10 = styled.div`
-`;
+const Text10 = styled.div``;

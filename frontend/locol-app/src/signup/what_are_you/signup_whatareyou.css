@@ -1,8 +1,11 @@
-.signupRootRootRoot {
+#signupRootRootRoot {
     background-color: #ffffff;
     overflow: hidden;
+    position: relative;
+    /* background-image: url("https://file.rendit.io/n/4C3igkQcKBwEwXeGYl7r.svg");
+    margin-top: 100px; */
 }
-.background {
+#signupRootRootRoot #background {
     height: 668px;
     display: flex;
     flex-direction: column;
@@ -11,19 +14,28 @@
     padding: 13.13% 27.5% 13.13% 27.43%;
     background-size: cover;
     background-image: url("https://file.rendit.io/n/4C3igkQcKBwEwXeGYl7r.svg");
+    position: relative;
 }
-.panel {
+#background #panel {
     height: 279px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-    padding: 4.93% 0px;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.75);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: auto;
+    position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+/* padding: 10px; */
+padding: 14px;
+border-radius: 20px;
+background-color: rgba(255, 255, 255, 0.75);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+margin:auto;
+width:550px;
+padding-bottom: 70px;
+/* padding-bottom: 82px; */
 }
-.text1 {
+
+#panel text1 {
     width: 100%;
     height: 44px;
     align-self: flex-start;
@@ -35,7 +47,7 @@
     line-height: 44.41500186920166px;
     text-align: center;
 }
-.text2 {
+#panel text2 {
     width: 17.57%;
     height: 18px;
     align-self: flex-start;
@@ -44,29 +56,40 @@
     font-weight: 600;
     font-family: Montserrat;
     white-space: nowrap;
+    margin-left: 45px;
 }
-.flexColumn {
+#panel #button {
+    /* width:100px;
+    height:100px;
+    border-radius: 100%;
+    background-color: red; */
+    width:280px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     margin: 0px 17.72% 3.08% 0px;
+    margin-left: 45px;
+    /* margin-right: 20px; */
     padding: 1.7% 51.46% 1.76% 4.31%;
     border-width: 1px;
     border-radius: 20px;
     border-style: solid;
     border-color: #bdbdbd;
     box-shadow: 0px 5px 25px 0px #02375f;
+    margin-bottom: 20px;
 }
-.text3 {
+#button text3 {
     width: 100%;
     height: 16px;
     font-size: 13px;
     font-weight: 500;
     font-family: Montserrat;
     white-space: nowrap;
+    /* text-align: center; */
+    /* margin-left: 120px; */
 }
-.flexColumn1 {
+/* #businessButton {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -78,15 +101,16 @@
     border-style: solid;
     border-color: #bdbdbd;
     box-shadow: 0px 5px 25px 0px #02375f;
-}
-.text4 {
+} */
+#button text4 {
     width: 100%;
     height: 16px;
     font-size: 13px;
     font-weight: 500;
     font-family: Montserrat;
+    /* margin-left: 120px; */
 }
-.text5 {
+#panel text5 {
     width: 34.67%;
     height: 13px;
     margin: 0px 31.59% 0px 0px;
@@ -95,29 +119,33 @@
     font-weight: 500;
     font-family: Montserrat;
     white-space: nowrap;
+    margin-left: 160px;
+    margin-top: 15px;
+    /* text-align: center; */
 }
-.text6 {
+#panel text6 {
     display: contents;
     color: #38518d;
     font-size: 11px;
     font-weight: 500;
     font-family: Montserrat;
+    text-align: center;
+    /* margin-top: 30px; */
 }
-.text7 {
+#panel text7 {
     display: contents;
     color: #ca8342;
     font-size: 11px;
     font-weight: 500;
     font-family: Montserrat;
     text-decoration-line: underline;
+    text-align: center;
 }
-.text8 {
+#panel text8 {
     display: contents;
     color: #9e9e9e;
     font-size: 11px;
     font-weight: 500;
     font-family: Montserrat;
-}
-.image1 {
-    height: 0px;
+    text-align: center;
 }
