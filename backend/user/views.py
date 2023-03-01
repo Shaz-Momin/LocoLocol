@@ -1,7 +1,11 @@
+from django.contrib.auth import authenticate, login
 from django.shortcuts import render
-from rest_framework import viewsets
+from rest_framework import viewsets, request
+from rest_framework.decorators import action
+from rest_framework.response import Response
 from .serializer import UserSerializer
 from .models import User
+from django.http import JsonResponse
 
 
 # Create your views here.
@@ -26,3 +30,32 @@ class UserView(viewsets.ModelViewSet):
     # A queryset is a database query that returns a list of model instances. It is an
     # object that represents a set of records from a database table or view
     queryset = User.objects.all()
+    @action(detail=False, methods=['POST'])
+    def login(self, request):
+        # Handle login logic
+        username = request.data.get('username')
+        password = request.data.get('password')
+
+        user = authenticate(username=username, password=password)
+
+        if user is not None:
+            login(request, user)
+            # If login is successful, create a JSON response
+            response = {
+                'status': 'success',
+                'message': 'Login successful'
+            }
+            return JsonResponse(response)
+        else:
+            response = {
+                'status': 'error',
+                'message': 'Invalid request method'
+            }
+            return JsonResponse(response, status=405)
+
+#def login_view(request):
+#    if request.method == 'POST':
+        # Handle login request
+        # Retrieve username and password from POST data
+#        username = request.POST.get('username')
+ #       password = request.POST.get('password')

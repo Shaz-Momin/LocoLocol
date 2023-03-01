@@ -1,13 +1,28 @@
-import React from "react";
 import styled from "styled-components";
 import { InputAdornment, Button, TextField, Input } from "@mui/material";
 import Visibility from "@mui/icons-material/Visibility";
+import React, { useState } from 'react';
 
 import "./login.css";
 
 export const Login = ({}) => {
   const FlexColumn1Function = (e, name) => {
     alert(`${name} was clicked`);
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleUsernameChange = (event) => {
+    setUsername(event.target.value);
+  };
+
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // handle login form submission here
+  };
   };
   return (
     <div id="LoginPage">
