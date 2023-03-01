@@ -1,35 +1,50 @@
 import React from "react";
 import styled from "styled-components";
 
+import "./signup_education.css";
+
 export const Signup_education = ({}) => {
     return (
-        <StudentsignupRootRootRoot>
-            <Background>
-                <Panel>
-                    <Group>
-                        <Text1>Education</Text1>
-                        <Arrows src={`https://file.rendit.io/n/pbXXVrmkxAzNUVaqDo1Q.svg`} />
-                    </Group>
-                    <Text2>What university do you attend?</Text2>
-                    <Dropshadow>
-                        <TypeHere>Type here . . . </TypeHere>
-                    </Dropshadow>
-                    <Text3>What do you study?</Text3>
-                    <Dropshadow>
-                        <TypeHere>Type here . . . </TypeHere>
-                    </Dropshadow>
-                    <Text4>What is your classification</Text4>
-                    <FlexColumn2>
-                        <Text5>Select a classification</Text5>
-                    </FlexColumn2>
-                    <Text6>When do you graduate?</Text6>
-                    <FlexColumn3>
-                        <Text7>Enter graduation date</Text7>
-                    </FlexColumn3>
-                </Panel>
-            </Background>
-            <Image1 src={`undefined`} />
-        </StudentsignupRootRootRoot>
+      <div id = "studenteducationRootRootRoot">
+      <div id = "background">
+        <div id = "panel">
+          <a href = "/signup_account">
+            <Arrows src={`https://file.rendit.io/n/pbXXVrmkxAzNUVaqDo1Q.svg`} />
+          </a>
+          <text1>Education</text1>
+          <a href = "/signup_about_you">
+
+          </a>
+        </div>
+      </div>
+      </div>
+        // <StudentsignupRootRootRoot>
+        //     <Background>
+        //         <Panel>
+        //             <Group>
+        //                 <Text1>Education</Text1>
+        //                 <Arrows src={`https://file.rendit.io/n/pbXXVrmkxAzNUVaqDo1Q.svg`} />
+        //             </Group>
+        //             <Text2>What university do you attend?</Text2>
+        //             <Dropshadow>
+        //                 <TypeHere>Type here . . . </TypeHere>
+        //             </Dropshadow>
+        //             <Text3>What do you study?</Text3>
+        //             <Dropshadow>
+        //                 <TypeHere>Type here . . . </TypeHere>
+        //             </Dropshadow>
+        //             <Text4>What is your classification</Text4>
+        //             <FlexColumn2>
+        //                 <Text5>Select a classification</Text5>
+        //             </FlexColumn2>
+        //             <Text6>When do you graduate?</Text6>
+        //             <FlexColumn3>
+        //                 <Text7>Enter graduation date</Text7>
+        //             </FlexColumn3>
+        //         </Panel>
+        //     </Background>
+        //     <Image1 src={`undefined`} />
+        // </StudentsignupRootRootRoot>
     );
 };
 

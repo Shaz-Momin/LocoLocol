@@ -25,7 +25,7 @@ export const Signup_what_are_you = ({}) => {
             </div>
             </a>
             <text5>Already have an account? <text6> </text6>
-            <text7><a href="/login">Login</a></text7>
+            <a href="/login"><text7>Login</text7></a>
             <text8> instead</text8></text5>
           </div>
 
