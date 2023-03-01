@@ -2,11 +2,13 @@
     background-color: #ffffff;
     overflow: hidden;
     position: relative;
+    /* height: 1000%; */
     /* background-image: url("https://file.rendit.io/n/4C3igkQcKBwEwXeGYl7r.svg");
     margin-top: 100px; */
 }
 #signupRootRootRoot #background {
-    height: 668px;
+    /* height: 668px; */
+    /* height: 1000%; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -16,7 +18,7 @@
     background-image: url("https://file.rendit.io/n/4C3igkQcKBwEwXeGYl7r.svg");
     position: relative;
 }
-#background #panel {
+#signupRootRootRoot #background #panel {
     height: 279px;
     height: auto;
     position: relative;
@@ -35,7 +37,7 @@ padding-bottom: 70px;
 /* padding-bottom: 82px; */
 }
 
-#panel text1 {
+#signupRootRootRoot #background #panel text1 {
     width: 100%;
     height: 44px;
     align-self: flex-start;
@@ -47,7 +49,7 @@ padding-bottom: 70px;
     line-height: 44.41500186920166px;
     text-align: center;
 }
-#panel text2 {
+#signupRootRootRoot #background #panel text2 {
     width: 17.57%;
     height: 18px;
     align-self: flex-start;
@@ -58,7 +60,7 @@ padding-bottom: 70px;
     white-space: nowrap;
     margin-left: 45px;
 }
-#panel #button {
+#signupRootRootRoot #background #panel #button {
     /* width:100px;
     height:100px;
     border-radius: 100%;
@@ -79,14 +81,14 @@ padding-bottom: 70px;
     box-shadow: 0px 5px 25px 0px #02375f;
     margin-bottom: 20px;
 }
-#button text3 {
+#signupRootRootRoot #background #panel #button text3 {
     width: 100%;
     height: 16px;
     font-size: 13px;
     font-weight: 500;
     font-family: Montserrat;
     white-space: nowrap;
-    /* text-align: center; */
+    /* text-align: left; */
     /* margin-left: 120px; */
 }
 /* #businessButton {
@@ -102,7 +104,7 @@ padding-bottom: 70px;
     border-color: #bdbdbd;
     box-shadow: 0px 5px 25px 0px #02375f;
 } */
-#button text4 {
+#signupRootRootRoot #background #panel #button text4 {
     width: 100%;
     height: 16px;
     font-size: 13px;
@@ -110,7 +112,7 @@ padding-bottom: 70px;
     font-family: Montserrat;
     /* margin-left: 120px; */
 }
-#panel text5 {
+#signupRootRootRoot #background #panel text5 {
     width: 34.67%;
     height: 13px;
     margin: 0px 31.59% 0px 0px;
@@ -123,7 +125,7 @@ padding-bottom: 70px;
     margin-top: 15px;
     /* text-align: center; */
 }
-#panel text6 {
+#signupRootRootRoot #background #panel text6 {
     display: contents;
     color: #38518d;
     font-size: 11px;
@@ -132,7 +134,7 @@ padding-bottom: 70px;
     text-align: center;
     /* margin-top: 30px; */
 }
-#panel text7 {
+#signupRootRootRoot #background #panel text7 {
     display: contents;
     color: #ca8342;
     font-size: 11px;
@@ -141,7 +143,7 @@ padding-bottom: 70px;
     text-decoration-line: underline;
     text-align: center;
 }
-#panel text8 {
+#signupRootRootRoot #background #panel text8 {
     display: contents;
     color: #9e9e9e;
     font-size: 11px;

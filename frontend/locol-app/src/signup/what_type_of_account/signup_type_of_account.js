@@ -1,33 +1,58 @@
 import React from "react";
 import styled from "styled-components";
 
+import "./signup_type_of_account.css";
+
+
 export const Signup_type_of_account = ({}) => {
     return (
-        <StudentsignupRootRootRoot>
-            <Background>
-                <Panel>
-                    <Text1>Welcome to Locol!</Text1>
-                    <Text2>What type of account are you seeking?</Text2>
-                    <FlexColumn>
-                        <StudentAccount>Student account </StudentAccount>
-                        <Dropshadow>
-                            <FlexColumn1>
-                                <Text3>Student account</Text3>
-                            </FlexColumn1>
-                        </Dropshadow>
-                    </FlexColumn>
-                    <FlexColumn2>
-                        <Text4>Business account</Text4>
-                    </FlexColumn2>
-                    <Text5>
-                        Already have an account?<Text6> </Text6>
-                        <Text7>Login</Text7>
-                        <Text8> instead.</Text8>
-                    </Text5>
-                </Panel>
-            </Background>
-            <Image1 src={`undefined`} />
-        </StudentsignupRootRootRoot>
+      <div id = "studentsignupRootRootRoot">
+        <div id = "background">
+          <div id = "panel">
+            <text1>Welcome to Locol!</text1>
+            <text2>What type of account are you seeking?</text2>
+            <a href="/signup_education">
+              <div id="button">
+                <text3>Student account</text3>
+              </div>
+            </a>
+          <a href="">
+            <div id="button">
+              <text4>Business account</text4>
+            </div>
+            </a>
+            <text5>Already have an account? <text6> </text6>
+            <a href="/login"><text7>Login</text7></a>
+            <text8> instead</text8></text5>
+          </div>
+        </div>
+      </div>
+  
+        // <StudentsignupRootRootRoot>
+        //     <Background>
+        //         <Panel>
+        //             <Text1>Welcome to Locol!</Text1>
+        //             <Text2>What type of account are you seeking?</Text2>
+        //             <FlexColumn>
+        //                 <StudentAccount>Student account </StudentAccount>
+        //                 <Dropshadow>
+        //                     <FlexColumn1>
+        //                         <Text3>Student account</Text3>
+        //                     </FlexColumn1>
+        //                 </Dropshadow>
+        //             </FlexColumn>
+        //             <FlexColumn2>
+        //                 <Text4>Business account</Text4>
+        //             </FlexColumn2>
+        //             <Text5>
+        //                 Already have an account?<Text6> </Text6>
+        //                 <Text7>Login</Text7>
+        //                 <Text8> instead.</Text8>
+        //             </Text5>
+        //         </Panel>
+        //     </Background>
+        //     <Image1 src={`undefined`} />
+        // </StudentsignupRootRootRoot>
     );
 };
 
@@ -36,7 +61,8 @@ const StudentsignupRootRootRoot = styled.div`
   overflow: hidden;
 `;
 const Background = styled.div`
-  height: 668px;
+  // height: 668px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

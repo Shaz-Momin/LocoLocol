@@ -1,9 +1,10 @@
-.studentsignupRootRootRoot {
+#studentsignupRootRootRoot {
     background-color: #ffffff;
     overflow: hidden;
 }
-.background {
+#studentsignupRootRootRoot #background {
     height: 668px;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -12,8 +13,8 @@
     background-size: cover;
     background-image: url("https://file.rendit.io/n/WEXEW8nMUubKOhiJCqi4.svg");
 }
-.panel {
-    height: 279px;
+#studentsignupRootRootRoot #background #panel {
+    /* height: 279px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -22,8 +23,25 @@
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.75);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: auto; */
+
+
+    height: 279px;
+    height: auto;
+    position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 14px;
+border-radius: 20px;
+background-color: rgba(255, 255, 255, 0.75);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+margin:auto;
+width:550px;
+padding-bottom: 70px;
 }
-.text1 {
+#studentsignupRootRootRoot #background #panel text1 {
     width: 100%;
     height: 44px;
     align-self: flex-start;
@@ -35,8 +53,30 @@
     line-height: 44.41500186920166px;
     text-align: center;
 }
-.text2 {
-    width: 46.84%;
+
+#studentsignupRootRootRoot #background #panel #button{
+    /* width:100px;
+    height:100px;
+    border-radius: 100%;
+    background-color: red; */
+    width:280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 17.72% 3.08% 0px;
+    margin-left: 45px;
+    /* margin-right: 20px; */
+    padding: 1.7% 51.46% 1.76% 4.31%;
+    border-width: 1px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #bdbdbd;
+    box-shadow: 0px 5px 25px 0px #02375f;
+    margin-bottom: 20px;
+}
+#studentsignupRootRootRoot #background #panel text2 {
+    width: 17.57%;
     height: 18px;
     align-self: flex-start;
     margin: 0px 0px 2% 17.87%;
@@ -44,6 +84,7 @@
     font-weight: 600;
     font-family: Montserrat;
     white-space: nowrap;
+    margin-left: 45px;
 }
 .flexColumn {
     width: 64.1%;
@@ -84,16 +125,9 @@
     border-color: #bdbdbd;
     box-shadow: 0px 5px 25px 0px #02375f;
 }
-.flexColumn1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 2.9% 66.59% 2.87% 6.97%;
-    background-size: cover;
-    background-image: url("https://file.rendit.io/n/N3myx0Nbkfg5EsLVOOIG.svg");
-}
-.text3 {
+
+
+#studentsignupRootRootRoot #background #panel text3 {
     width: 100%;
     height: 16px;
     color: #ca8342;
@@ -115,14 +149,14 @@
     border-color: #bdbdbd;
     box-shadow: 0px 5px 25px 0px #02375f;
 }
-.text4 {
+#studentsignupRootRootRoot #background #panel text4 {
     width: 100%;
     height: 16px;
     font-size: 13px;
     font-weight: 500;
     font-family: Montserrat;
 }
-.text5 {
+#studentsignupRootRootRoot #background #panel text5 {
     width: 34.67%;
     height: 13px;
     margin: 0px 31.59% 0px 0px;
@@ -131,15 +165,27 @@
     font-weight: 500;
     font-family: Montserrat;
     white-space: nowrap;
+    margin-left: 160px;
+    margin-top: 15px;
+    /* text-align: center; */
+/* 
+    width: 34.67%;
+    height: 13px;
+    margin: 0px 31.59% 0px 0px;
+    color: #9e9e9e;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: Montserrat;
+    white-space: nowrap; */
 }
-.text6 {
+#studentsignupRootRootRoot #background #panel text6 {
     display: contents;
     color: #38518d;
     font-size: 11px;
     font-weight: 500;
     font-family: Montserrat;
 }
-.text7 {
+#studentsignupRootRootRoot #background #panel text7 {
     display: contents;
     color: #ca8342;
     font-size: 11px;
@@ -147,13 +193,11 @@
     font-family: Montserrat;
     text-decoration-line: underline;
 }
-.text8 {
+#studentsignupRootRootRoot #background #panel text8 {
     display: contents;
     color: #9e9e9e;
     font-size: 11px;
     font-weight: 500;
     font-family: Montserrat;
 }
-.image1 {
-    height: 0px;
-}
+
