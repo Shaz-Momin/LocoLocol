@@ -1,58 +1,87 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
-import { InputAdornment, Button, TextField, Input } from "@mui/material";
+import {InputAdornment, Button, TextField, Input} from "@mui/material";
 import Visibility from "@mui/icons-material/Visibility";
 
 import "./login.css";
 
 export const Login = ({}) => {
-  const FlexColumn1Function = (e, name) => {
-    alert(`${name} was clicked`);
-  };
-  return (
-    <div id="LoginPage">
-      <div id="Background">
-        <div id="Panel">
-            <text10>Welcome Back!</text10>
-          
-          <text1>Sign in</text1>
-          <text2>to your Locol account</text2>
-          <text3>Email:</text3>
-          <div className="tf-outer">
-            <TextField
-              className="tf-inner"
-              variant="outlined"
-              position="absolute"
-            />
-            </div>
-            <text4>Password</text4>
-            <div className="tf-outer">
-             <TextField
-              className="tf-inner"
-              variant="outlined"
-              position="absolute"
-              InputProps={{endAdornment: (<InputAdornment position="end" style = {{cursor: "pointer"}}>
-                <Visibility 
-                  onMouseDown={() => this.toggleShowPassword()}
-                  onMouseUp={() => this.toggleShowPassword()}
-                  />
-              </InputAdornment>)}}
-              // InputProps={{
-              //   endAdornment: (
-              //     <InputAdornment position="end" style={{ cursor: "pointer"}}>
-              //       <Visibility
-              //         onMouseDown={() => this.toggleShowPassword()}
-              //         onMouseUp={() => this.toggleShowPassword()}
-              //       />
-              //     </InputAdornment>
-              //   ),
-              // }}
-              // type={this.state.showPassword ? "text" : "password"}
-              // value={this.state.password}
-              // onChange={(e) => this.changePassword(e.target.value)}
-            />
-            
-          {/* 
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    function changeEmail(val) {
+        setEmail(val)
+    }
+
+    function changePassword(val) {
+        setPassword(val)
+    }
+
+    const sendData = async (data) => {
+
+        const response = await fetch('/api/myendpoint/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+        const result = await response.json();
+        // do something with the result, if necessary
+    }
+    const FlexColumn1Function = (e, name) => {
+        alert(`${name} was clicked`);
+    };
+    return (
+        <div id="LoginPage">
+            <div id="Background">
+                <div id="Panel">
+                    <text10>Welcome Back!</text10>
+
+                    <text1>Sign in</text1>
+                    <text2>to your Locol account</text2>
+                    <text3>Email:</text3>
+                    <div className="tf-outer">
+                        <TextField
+                            className="tf-inner"
+                            variant="outlined"
+                            position="absolute"
+                            onChange={(e) => changeEmail(e.target.value)}
+                        />
+
+
+                    </div>
+                    <text4>Password</text4>
+                    <div className="tf-outer">
+                        <TextField
+                            className="tf-inner"
+                            variant="outlined"
+                            position="absolute"
+                            InputProps={{
+                                endAdornment: (<InputAdornment position="end" style={{cursor: "pointer"}}>
+                                    <Visibility
+                                        onMouseDown={() => this.toggleShowPassword()}
+                                        onMouseUp={() => this.toggleShowPassword()}
+                                    />
+                                </InputAdornment>)
+                            }}
+                            onChange={(e) => changePassword(e.target.value)}
+                            // InputProps={{
+                            //   endAdornment: (
+                            //     <InputAdornment position="end" style={{ cursor: "pointer"}}>
+                            //       <Visibility
+                            //         onMouseDown={() => this.toggleShowPassword()}
+                            //         onMouseUp={() => this.toggleShowPassword()}
+                            //       />
+                            //     </InputAdornment>
+                            //   ),
+                            // }}
+                            // type={this.state.showPassword ? "text" : "password"}
+                            // value={this.state.password}
+                            // onChange={(e) => this.changePassword(e.target.value)}
+                        />
+
+                        {/*
 
                     <Element1 />
                     <Text4>Password</Text4>
@@ -63,16 +92,16 @@ export const Login = ({}) => {
                     </FlexColumn> */}
                     </div>
                     <div className="FlexColumn1">
-                      <text5>Login</text5>
+                        <text5>Login</text5>
                     </div>
-            <text6>Don't have an account?  
-              <a href="/signup_person"> Sign Up</a> instead.
-              <div><a href="/home">Forgot Password?</a></div> {/*change the url*/}
-            </text6>
+                    <text6>Don't have an account?
+                        <a href="/signup_person"> Sign Up</a> instead.
+                        <div><a href="/home">Forgot Password?</a></div> {/*change the url*/}
+                    </text6>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 const LoginRootRootRoot = styled.div`
