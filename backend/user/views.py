@@ -7,6 +7,7 @@ from .models import User
 import json
 
 
+
 class UserView(viewsets.ModelViewSet):
     serializer_class = UserSerializer
     queryset = User.objects.all()
