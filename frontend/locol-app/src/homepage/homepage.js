@@ -1,8 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import "./homepage.css";
+import { Navigate, redirect } from "react-router-dom";
+// import { routeManager } from "../../routeManager";
+import { render } from "@testing-library/react";
 
-export const Homepage = ({}) => {
+// export const Homepage = ({}) => {
+  function homepage() {
     return (
       <div id = "HomepgSTYLEDRootRoot">
         <div className = "Group36">
@@ -499,7 +503,10 @@ export const Homepage = ({}) => {
 //             <LocolSolutionsLLC> Locol Solutions LLC. © 2023</LocolSolutionsLLC>
 //         {/* </HomepgSTYLEDRootRoot> */}
     );
-};
+}
+
+export default homepage;
+// };
 
 
 

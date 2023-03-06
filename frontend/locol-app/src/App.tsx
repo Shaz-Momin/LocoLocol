@@ -1,12 +1,13 @@
 import React, { Fragment } from "react";
+import axios from "axios";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 // import logo from './logo.svg';
 import { Navbar } from "./Navbar";
-import { Homepage } from "./homepage/homepage";
+import  Homepage  from "./homepage/homepage";
 import { Marketplace } from "./marketplace/marketplace";
 import { Board } from "./board/board";
 import { Community } from "./community/community";
-import { Login } from "./login/login";
+import  Login  from "./login/login";
 import { Signup_what_are_you } from "./signup/what_are_you/signup_what_are_you";
 import { Signup_type_of_account } from "./signup/what_type_of_account/signup_type_of_account";
 import { Signup_education } from "./signup/education/signup_education";
