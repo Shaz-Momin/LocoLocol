@@ -2,8 +2,9 @@ from django.http import JsonResponse
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework import viewsets
-from .serializer import UserSerializer
+from .serializer import UserSerializer, BusUserSerializer
 from .models import User
+from .models import BusUser
 
 
 # Create your views here.
@@ -28,6 +29,14 @@ class UserView(viewsets.ModelViewSet):
     # A queryset is a database query that returns a list of model instances. It is an
     # object that represents a set of records from a database table or view
     queryset = User.objects.all()
+
+
+class BusView(viewsets.ModelViewSet):
+    serializer_class = BusUserSerializer
+
+    # A queryset is a database query that returns a list of model instances. It is an
+    # object that represents a set of records from a database table or view
+    queryset = BusUser.objects.all()
 
 
 @csrf_exempt
