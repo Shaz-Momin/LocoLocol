@@ -17,8 +17,28 @@ export const Login = ({}) => {
         setPassword(val)
     }
 
-    const sendData = async (data) => {
+    function sendLoginInfoToBackend() {
+        // Send a POST request to the Django server
+        fetch('http://127.0.0.1:8000/hello-world/', {
+            method: 'POST',
+            withCredentials: true,
+            crossorigin: true,
+            mode: 'no-cors',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(email)
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+            })
+            .catch(error => {
+                console.log(error)
+            });
+    }
 
+    const sendData = async (data) => {
         const response = await fetch('/api/myendpoint/', {
             method: 'POST',
             headers: {
@@ -92,7 +112,7 @@ export const Login = ({}) => {
                     </FlexColumn> */}
                     </div>
                     <div className="FlexColumn1">
-                        <text5>Login</text5>
+                        <button onClick={sendLoginInfoToBackend}>Login</button>
                     </div>
                     <text6>Don't have an account?
                         <a href="/signup_person"> Sign Up</a> instead.

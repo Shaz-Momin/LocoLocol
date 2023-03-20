@@ -1,7 +1,9 @@
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render
-from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.csrf import csrf_exempt, ensure_csrf_cookie
 from rest_framework import viewsets
+from rest_framework.response import Response
+
 from .serializer import UserSerializer
 from .models import User
 
@@ -33,8 +35,15 @@ class UserView(viewsets.ModelViewSet):
 @csrf_exempt
 def hello_world(request):
     if request.method == 'POST':
-        # data = request.POST.get('data', None)
-        # do something with the data, e.g. save to the database
-        return JsonResponse({'status': 'ok'})
-    else:
-        return JsonResponse({'status': 'error'})
+        # Process the data here...
+        print("YOOOOO")
+
+        # Return a response
+        data = {
+            'name': 'John Doe',
+            'age': 30,
+            'email': 'johndoe@example.com'
+        }
+
+        # Create a JSON response containing the data
+        return JsonResponse(data)
