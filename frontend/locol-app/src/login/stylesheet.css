@@ -1,0 +1,193 @@
+#LoginPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #feeeff;
+  overflow: hidden;
+  position: relative;
+  }
+  
+  #LoginPage #Background {
+  width: 45.07%;
+  height: 608px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 15.21% 27.43% 15.21% 27.5%;
+  background-size: cover;
+  background-image: url("https://file.rendit.io/n/ecNOoEwBfr1h6dY9RzP0.svg");
+}
+
+#Background #Panel{
+/* left: 395px;
+top: 189px; */
+/* left:50%; */
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+/* padding: 10px; */
+padding: 14px;
+border-radius: 5%;
+background-color: rgba(255, 255, 255, 0.75);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+margin:auto;
+padding-bottom: 82px;
+}
+
+#Panel .tf-outer {
+    padding: 4px;
+    text-align: center;
+    position: relative;
+}
+#Panel .tf-outer .tf-inner {
+    width: 80%;
+    position: relative;
+  }
+
+  #Panel .FlexColumn1 {
+
+
+
+    height: 42px;
+    width: 135px;
+    left: 60px;
+    position: absolute;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-self: center;
+  /* align-items: flex-start; */
+  margin: 10px 0px 2.47% 0px;
+  border-width: 0px;
+  box-sizing: content-box;
+  background-color: transparent;
+  background-size: cover;
+  background-image: url("https://file.rendit.io/n/twftZqve3pdnNvT0JCd5.svg");
+  cursor: pointer; 
+  /* &: hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+  } ; */
+  top: 265px;
+  }
+
+#LoginPage text1{
+  width: 100%;
+  height: 44px;
+  margin: 0px 0px 1.08% 0px;
+  color: #00416b;
+  font-size: 35px;
+  font-weight: 700;
+  font-family: Montserrat;
+  line-height: 44.41500186920166px;
+  text-align: center;
+}
+
+#LoginPage text2{
+    width: 100%;
+    height: 18px;
+    margin: 0px 0px 2.62% 0px;
+    color: #00416b;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Montserrat;
+    line-height: 17.766000747680664px;
+    text-align: center;
+  }
+
+  #Panel text3{
+    text-align: center;
+    position: relative;
+    width: 6.32%;
+    height: 16px;
+    margin: 0px 0px 1.08% 16.95%;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: Montserrat;
+    white-space: nowrap;
+  }
+
+  #Panel text4{
+    width: 10.02%;
+    height: 16px;
+    margin: 0px 0px 1.08% 16.95%;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: Montserrat;
+    white-space: nowrap;
+  }
+
+  #LoginPage text5{
+    width: 100%;
+  height: 41px;
+  color: #fefdfb;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: Montserrat;
+  line-height: 40.5px;
+  text-align: center;
+    }
+
+#Panel text6 {
+    width: 34.82%;
+  height: 13px;
+  top: 50px;
+  align-self: center;
+  margin: 0px 31.28% 0.92% 0px;
+  color: #9e9e9e;
+  font-size: 11px;
+  font-weight: 500;
+  font-family: Montserrat;
+  white-space: nowrap;
+  text-align: center;
+  position: relative;
+}
+
+  #Panel text8 {
+    display: contents;
+  color: #38518d;
+  font-size: 11px;
+  font-weight: 500;
+  font-family: Montserrat;
+  text-decoration-line: underline;
+  }  
+
+  #Panel text10{
+    width: 100%;
+    height: 22px;
+    position: relative;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: Montserrat;
+    line-height: 21.57300090789795px;
+    text-align: center;
+  }
+
+  
+  /* deprecated */
+  .LoginPage .register {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    width: 300px;
+    height: auto;
+    margin-top: 100px;
+    padding: 10px;
+    padding-bottom: 30px;
+    background-color: rgb(255, 205, 139);
+  }
+  
+  .LoginPage .h {
+    text-align: center;
+  }
+  
+  .LoginPage .buttonList {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding: 4px;
+  }
