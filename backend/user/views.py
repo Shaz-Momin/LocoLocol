@@ -50,6 +50,6 @@ def hello_world(request):
         mydata = User.objects.filter(email=email, password=password).values()
 
         if mydata:
-            return JsonResponse({"response": "YES"})
+            return JsonResponse({'response': 'YES'})
         else:
-            return JsonResponse({"response": "NO"})
+            return JsonResponse({'response': 'NO'})

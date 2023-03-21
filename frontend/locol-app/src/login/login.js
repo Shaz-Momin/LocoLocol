@@ -22,33 +22,17 @@ export const Login = ({}) => {
         fetch('http://127.0.0.1:8000/hello-world/', {
             method: 'POST',
             withCredentials: true,
-            crossorigin: true,
-            mode: 'no-cors',
+            mode: "cors",
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({ email: email, password: password})
         })
             .then(response => response.json())
-            .then(data => {
-                console.log(data["response"])
-            })
-            .catch(error => {
-                console.log(error)
-            });
+            .then(data => {console.log(data)})
+            .catch(error => {console.log(error)});
     }
 
-    const sendData = async (data) => {
-        const response = await fetch('/api/myendpoint/', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        });
-        const result = await response.json();
-        // do something with the result, if necessary
-    }
     const FlexColumn1Function = (e, name) => {
         alert(`${name} was clicked`);
     };
