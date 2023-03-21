@@ -2,7 +2,7 @@ import React, {Fragment} from "react";
 import {BrowserRouter, Route, Routes, useLocation} from "react-router-dom";
 // import logo from './logo.svg';
 import {Navbar} from "./Navbar";
-import {Homepage} from "./homepage/homepage";
+import Homepage from "./homepage/homepage"
 import {Marketplace} from "./marketplace/marketplace";
 import {Board} from "./board/board";
 import {Community} from "./community/community";

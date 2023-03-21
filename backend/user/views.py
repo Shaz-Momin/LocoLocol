@@ -1,3 +1,5 @@
+import json
+
 from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt, ensure_csrf_cookie
@@ -36,14 +38,18 @@ class UserView(viewsets.ModelViewSet):
 def hello_world(request):
     if request.method == 'POST':
         # Process the data here...
-        print("YOOOOO")
+        info = request.body.decode()
 
-        # Return a response
-        data = {
-            'name': 'John Doe',
-            'age': 30,
-            'email': 'johndoe@example.com'
-        }
+        # convert string to dict
+        json_object = json.loads(info)
 
-        # Create a JSON response containing the data
-        return JsonResponse(data)
+        email = json_object['email']
+        password = json_object['password']
+
+        # check if user exists
+        mydata = User.objects.filter(email=email, password=password).values()
+
+        if mydata:
+            return JsonResponse({"response": "YES"})
+        else:
+            return JsonResponse({"response": "NO"})

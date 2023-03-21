@@ -27,11 +27,11 @@ export const Login = ({}) => {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(email)
+            body: JSON.stringify({ email: email, password: password})
         })
             .then(response => response.json())
             .then(data => {
-                console.log(data)
+                console.log(data["response"])
             })
             .catch(error => {
                 console.log(error)
