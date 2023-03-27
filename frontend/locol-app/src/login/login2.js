@@ -5,7 +5,7 @@ import Visibility from "@mui/icons-material/Visibility";
 
 import "./login.css";
 
-export const LoginStudent = ({}) => {
+export const LoginBusiness = ({}) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -43,7 +43,7 @@ export const LoginStudent = ({}) => {
                     <text10>Welcome Back!</text10>
 
                     <text1>Sign in</text1>
-                    <text2>to your Locol Student account</text2>
+                    <text2>to your Locol Business account</text2>
                     <text3>Email:</text3>
                     <div className="tf-outer">
                         <TextField

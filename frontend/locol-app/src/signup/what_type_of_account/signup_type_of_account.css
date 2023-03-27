@@ -41,7 +41,7 @@ margin:auto;
 width:550px;
 padding-bottom: 70px;
 }
-#studentsignupRootRootRoot #background #panel text1 {
+#studentsignupRootRootRoot #background #panel text1_type {
     width: 100%;
     height: 44px;
     align-self: flex-start;
@@ -75,7 +75,7 @@ padding-bottom: 70px;
     box-shadow: 0px 5px 25px 0px #02375f;
     margin-bottom: 20px;
 }
-#studentsignupRootRootRoot #background #panel text2 {
+#studentsignupRootRootRoot #background #panel text2_type {
     width: 17.57%;
     height: 18px;
     align-self: flex-start;
@@ -127,7 +127,7 @@ padding-bottom: 70px;
 }
 
 
-#studentsignupRootRootRoot #background #panel text3 {
+#studentsignupRootRootRoot #background #panel text3_type {
     width: 100%;
     height: 16px;
     color: #ca8342;
@@ -149,14 +149,15 @@ padding-bottom: 70px;
     border-color: #bdbdbd;
     box-shadow: 0px 5px 25px 0px #02375f;
 }
-#studentsignupRootRootRoot #background #panel text4 {
+#studentsignupRootRootRoot #background #panel text4_type {
     width: 100%;
     height: 16px;
     font-size: 13px;
     font-weight: 500;
     font-family: Montserrat;
+    color: black;
 }
-#studentsignupRootRootRoot #background #panel text5 {
+#studentsignupRootRootRoot #background #panel text5_type {
     width: 34.67%;
     height: 13px;
     margin: 0px 31.59% 0px 0px;
@@ -178,14 +179,14 @@ padding-bottom: 70px;
     font-family: Montserrat;
     white-space: nowrap; */
 }
-#studentsignupRootRootRoot #background #panel text6 {
+#studentsignupRootRootRoot #background #panel text6_type {
     display: contents;
     color: #38518d;
     font-size: 11px;
     font-weight: 500;
     font-family: Montserrat;
 }
-#studentsignupRootRootRoot #background #panel text7 {
+#studentsignupRootRootRoot #background #panel text7_type {
     display: contents;
     color: #ca8342;
     font-size: 11px;
@@ -193,7 +194,7 @@ padding-bottom: 70px;
     font-family: Montserrat;
     text-decoration-line: underline;
 }
-#studentsignupRootRootRoot #background #panel text8 {
+#studentsignupRootRootRoot #background #panel text8_type {
     display: contents;
     color: #9e9e9e;
     font-size: 11px;

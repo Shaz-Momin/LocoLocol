@@ -1,15 +1,82 @@
 import React from "react";
 import styled from "styled-components";
 
-export const Signup_about_you = ({}) => {
+import leftArrow from "./leftArrow.png";
+import rightArrow from "./rightArrow.png";
+import "./signup_about_you.css";
+
+function Signup_about_you() {
     return (
-        <StudentsignupRootRootRoot>
-            <Background>
-                <Panel>
-                    <Group>
+
+      //     <div style={{display: 'flex', flexDirection: "row"}}>
+      //       <div style={{ flex:1 }}>
+      //         <a href = "/signup_account">
+      //           <Arrows1 src={rightArrow} />
+      //         </a>
+      //       </div>
+      //       <div style={{ flex:1 }}>
+      //         <text1>Education</text1>
+      //       </div>
+      //       <div style={{ flex:1 }}>
+      //         <a href = "/signup_about_you">
+      //           <Arrows2 src={leftArrow} />
+      //         </a>
+      //       </div>
+      //     </div>
+      //     <text2>What university do you attend?</text2>
+      //     <input type="text" id="ip2"/>
+      //     {/* <TextField
+      //       required
+      //       label="Type here..." 
+      //       inputProps={{
+      //         style: {
+      //           width: "280px",
+      //           borderRadius: '20px',
+      //         },
+      //       }}
+      //       /> */}
+      //     <text3>What do you study?</text3>
+      //     {/* <TextField
+      //       required 
+      //       label="Type here..."
+      //       id="search"
+      //       /> */}
+      //       <input type="text" id="ip2"/>
+      //       <div id="match-list"></div>
+      //       <script src="majors.js"></script>
+      //     <text4>What is your classification</text4>
+      //     <input type="text" id="ip2"/>
+      //     {/* <TextField
+      //       required 
+      //       label="Select a classification"/> */}
+      //     <text6>When do you graduate?</text6>
+      //     <input type="text" id="ip2"/>
+      //     {/* <TextField
+      //       required 
+      //       label="Enter a graduation date"/> */}
+
+        <div id = "studentsignupRootRootRoot">
+            <div id = "background">
+                <div id = "panel">
+                  <div style={{display: 'flex', flexDirection: "row"}}>
+                    <div style={{ flex:1 }}>
+                      <a href = "/signup_education">
+                        <Arrows src={rightArrow} />
+                      </a>
+                    </div>
+                    <div style={{ flex:1 }}>
+                      <text1_about>About You</text1_about>
+                    </div>
+                    <div style={{ flex:1 }}>
+                      <a href = "/signup_create">
+                        <Arrows src={leftArrow} />
+                      </a>
+                    </div>
+                  </div>
+                    {/* <Group>
                         <Text1>About You</Text1>
                         <Arrows src={`https://file.rendit.io/n/p5OSPxeFyL5WRdnMsZ8G.svg`} />
-                    </Group>
+                    </Group> */}
                     <Text2>Select Skills</Text2>
                     <Dropshadow>
                         <Text3>Select . . .</Text3>
@@ -17,56 +84,102 @@ export const Signup_about_you = ({}) => {
                     <Text4>Areas of Interest</Text4>
                     <FlexColumn1>
                         <Group1>
-                            <Element1 />
-                            <Text5>Copywriting</Text5>
+                            {/* <Element1 /> */}
+                            <form>
+                              <div>
+                                <label><input type="checkbox" /> Copywriting </label>
+                              </div>
+                            </form>
+                            {/* <Text5>Copywriting</Text5> */}
                         </Group1>
                         <Line />
                         <Group2>
-                            <Element2 />
-                            <Text6>Email Marketing</Text6>
+                            <form>
+                              <div>
+                                <label><input type="checkbox" /> Email Marketing </label>
+                              </div>
+                            </form>
+                            {/* <Element2 />
+                            <Text6>Email Marketing</Text6> */}
                         </Group2>
                         <Line1 />
                         <Group3>
-                            <Element3 />
-                            <Text7>Graphic Design</Text7>
+                            <form>
+                              <div>
+                                <label><input type="checkbox" /> Graphic Design </label>
+                              </div>
+                            </form>
+                            {/* <Element3 />
+                            <Text7>Graphic Design</Text7> */}
                         </Group3>
                         <Line2 src={`https://file.rendit.io/n/b82SVgYRbMmNluoCJanG.svg`} />
                         <Group4>
-                            <Element4 />
-                            <Text8>Marketing Strategy</Text8>
+                            <form>
+                              <div>
+                                <label><input type="checkbox" /> Marketing Strategy </label>
+                              </div>
+                            </form>
+                            {/* <Element4 />
+                            <Text8>Marketing Strategy</Text8> */}
                         </Group4>
                         <Line3 />
                         <Group5>
-                            <Element5 />
-                            <Text9>Video Marketing</Text9>
+                            <form>
+                              <div>
+                                <label><input type="checkbox" /> Video Marketing </label>
+                              </div>
+                            </form>
+                            {/* <Element5 />
+                            <Text9>Video Marketing</Text9> */}
                         </Group5>
                         <Line4 />
                         <Group6>
-                            <Element6 />
-                            <Text10>Search Engine Optimization</Text10>
+                            <form>
+                              <div>
+                                <label><input type="checkbox" /> Search Engine Optimization </label>
+                              </div>
+                            </form>
+                            {/* <Element6 />
+                            <Text10>Search Engine Optimization</Text10> */}
                         </Group6>
                         <Line5 />
                         <Group7>
-                            <Element7 />
-                            <Text11>Social Media Marketing</Text11>
+                          <form>
+                              <div>
+                                <label><input type="checkbox" /> Social Media Marketing </label>
+                              </div>
+                            </form>
+                            {/* <Element7 />
+                            <Text11>Social Media Marketing</Text11> */}
                         </Group7>
                         <Line6 />
                         <Group8>
-                            <Element8 />
-                            <Text12>Web Analytics</Text12>
+                            <form>
+                              <div>
+                                <label><input type="checkbox" /> Web Analytics </label>
+                              </div>
+                            </form>
+                            {/* <Element8 />
+                            <Text12>Web Analytics</Text12> */}
                         </Group8>
                         <Line7 />
                         <Group9>
-                            <Element9 />
-                            <Text13>Web Development</Text13>
+                            <form>
+                              <div>
+                                <label><input type="checkbox" /> Web Development </label>
+                              </div>
+                            </form>
+                            {/* <Element9 />
+                            <Text13>Web Development</Text13> */}
                         </Group9>
                     </FlexColumn1>
-                </Panel>
-            </Background>
-            <Image1 src={`undefined`} />
-        </StudentsignupRootRootRoot>
+                </div>
+            </div>
+        </div>
     );
 };
+
+export default Signup_about_you;
 
 const StudentsignupRootRootRoot = styled.div`
   background-color: #ffffff;
@@ -82,7 +195,8 @@ const Background = styled.div`
   background-image: url("https://file.rendit.io/n/d1A5dfHd1bS2uKcBQXe7.svg");
 `;
 const Panel = styled.div`
-  height: 571px;
+  height: auto;
+  width: 550px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -101,20 +215,6 @@ const Group = styled.div`
   align-items: flex-start;
   margin: 0px 0px 4.57% 0px;
   padding: 1.69% 0px 1.66% 0px;
-`;
-const Text1 = styled.div`
-  width: 25.02%;
-  height: 32px;
-  left: 64.8px;
-  top: 0px;
-  position: absolute;
-  color: #262626;
-  font-size: 25px;
-  font-weight: 700;
-  font-family: Montserrat;
-  line-height: 31.725001335144043px;
-  text-align: center;
-  white-space: nowrap;
 `;
 const Arrows = styled.img`
   width: 100.09%;
@@ -164,6 +264,7 @@ const Text4 = styled.div`
 `;
 const FlexColumn1 = styled.div`
   height: 299px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
