@@ -1,6 +1,5 @@
-import React, { Fragment } from "react";
-import axios from "axios";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import React, {Fragment} from "react";
+import {BrowserRouter, Route, Routes, useLocation} from "react-router-dom";
 // import logo from './logo.svg';
 import { Navbar } from "./Navbar";
 import  Homepage  from "./homepage/homepage";
@@ -24,12 +23,10 @@ import { Business_profile } from "./business_profile/business_profile";
 import styled from "styled-components";
 
 
-
-
 const RoutesContainer = (props: {}) => {
-  // tuple of text displayed on the button and the link it leads to
-  const links: [string, string][] = [
-    // const links = [
+    // tuple of text displayed on the button and the link it leads to
+    const links: [string, string][] = [
+        // const links = [
 
     // [<Text13>Home</Text13>, "\home"],
     // [<Text14>Marketplace</Text14>, "market"],
@@ -51,13 +48,13 @@ const RoutesContainer = (props: {}) => {
     // ["BusinessProfile", "/business_profile"] 
   ];
 
-  const path = useLocation().pathname;
-  const onLoginPage = ["/"].includes(path);
+    const path = useLocation().pathname;
+    const onLoginPage = ["/"].includes(path);
 
-  return (
-    <Fragment>
-      <div className="content">
-        <Navbar options={links} currPath={path} simple={onLoginPage} />
+    return (
+        <Fragment>
+            <div className="content">
+                <Navbar options={links} currPath={path} simple={onLoginPage}/>
 
         {/* <div>current path: {path}</div> */}
         <Routes>
@@ -87,11 +84,13 @@ const RoutesContainer = (props: {}) => {
 };
 
 function App() {
-  return (
-    <BrowserRouter>
-      <RoutesContainer />
-    </BrowserRouter>
-  );
+    return (
+        <BrowserRouter>
+            <RoutesContainer/>
+        </BrowserRouter>
+    );
+
 }
+
 
 export default App;
