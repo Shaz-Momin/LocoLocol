@@ -2,22 +2,84 @@ import React from "react";
 import styled from "styled-components";
 
 import "./signup_education.css";
+import leftArrow from "./leftArrow.png";
+import rightArrow from "./rightArrow.png";
+import { Autocomplete, TextField } from "@mui/material";
 
-export const Signup_education = ({}) => {
+// export const Signup_education = ({}) => {
+  function Signup_education() {
+    // const search = document.getElementById('search');
+    // const matchList = document.getElementById('match-list');
+
+    // const searchStates = async searchText => {
+    // // async function getMajor() {
+    //   const res = await fetch('../majors.json');
+    //   const majors = await res.json();
+
+    //   // console.log(majors);
+    //   // let matches = majors.filter(state => {
+    //   //   const regex = new RegExp(`^${searchText}`, 'gi');
+    //   //   return state.name.match(regex) || state.abbreviation.match()
+    //   // });
+    //   console.log(majors);
+    // }
+
+    // search.addEventListener('input', () => searchStates(search.value));
+
     return (
       <div id = "studenteducationRootRootRoot">
       <div id = "background">
         <div id = "panel">
-          <a href = "/signup_account">
-            <Arrows src={`https://file.rendit.io/n/pbXXVrmkxAzNUVaqDo1Q.svg`} />
-          </a>
-          <text1>Education</text1>
-          <a href = "/signup_about_you">
-
-          </a>
+          <div style={{display: 'flex', flexDirection: "row"}}>
+            <div style={{ flex:1 }}>
+              <a href = "/signup_account">
+                <Arrows1 src={rightArrow} />
+              </a>
+            </div>
+            <div style={{ flex:1 }}>
+              <text1>Education</text1>
+            </div>
+            <div style={{ flex:1 }}>
+              <a href = "/signup_about_you">
+                <Arrows2 src={leftArrow} />
+              </a>
+            </div>
+          </div>
+          <text2>What university do you attend?</text2>
+          <input type="text" id="ip2"/>
+          {/* <TextField
+            required
+            label="Type here..." 
+            inputProps={{
+              style: {
+                width: "280px",
+                borderRadius: '20px',
+              },
+            }}
+            /> */}
+          <text3>What do you study?</text3>
+          {/* <TextField
+            required 
+            label="Type here..."
+            id="search"
+            /> */}
+            <input type="text" id="ip2"/>
+            <div id="match-list"></div>
+            <script src="majors.js"></script>
+          <text4>What is your classification</text4>
+          <input type="text" id="ip2"/>
+          {/* <TextField
+            required 
+            label="Select a classification"/> */}
+          <text6>When do you graduate?</text6>
+          <input type="text" id="ip2"/>
+          {/* <TextField
+            required 
+            label="Enter a graduation date"/> */}
         </div>
       </div>
       </div>
+
         // <StudentsignupRootRootRoot>
         //     <Background>
         //         <Panel>
@@ -47,6 +109,8 @@ export const Signup_education = ({}) => {
         // </StudentsignupRootRootRoot>
     );
 };
+
+export default Signup_education;
 
 const Dropshadow = styled.div`
   display: flex;
@@ -119,10 +183,16 @@ const Text1 = styled.div`
   text-align: center;
   white-space: nowrap;
 `;
-const Arrows = styled.img`
+const Arrows1 = styled.img`
   width: 100.09%;
   height: 13.6px;
   position: relative;
+`;
+const Arrows2 = styled.img`
+  width: 100.09%;
+  height: 13.6px;
+  position: relative;
+  left: 350px;
 `;
 const Text2 = styled.div`
   width: 44.57%;

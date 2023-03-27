@@ -1,0 +1,16 @@
+[
+    {
+        "name": "majors.json",
+        "description": "This file contains a bunch of majors",
+        "version": 4,
+        "majors": [
+            "Accounting",
+            "Business",
+            "Engineering",
+            "Computer Engineering",
+            "Mechanical Engineering",
+            "Biology",
+            "Chemistry"
+        ]
+    }
+]

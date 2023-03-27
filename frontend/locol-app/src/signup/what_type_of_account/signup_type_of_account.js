@@ -9,21 +9,21 @@ export const Signup_type_of_account = ({}) => {
       <div id = "studentsignupRootRootRoot">
         <div id = "background">
           <div id = "panel">
-            <text1>Welcome to Locol!</text1>
-            <text2>What type of account are you seeking?</text2>
+            <text1_type>Welcome to Locol!</text1_type>
+            <text2_type>What type of account are you seeking?</text2_type>
             <a href="/signup_education">
               <div id="button">
-                <text3>Student account</text3>
+                <text3_type>Student account</text3_type>
               </div>
             </a>
-          <a href="">
+          <a href="/business_information">
             <div id="button">
-              <text4>Business account</text4>
+              <text4_type>Business account</text4_type>
             </div>
             </a>
-            <text5>Already have an account? <text6> </text6>
-            <a href="/login"><text7>Login</text7></a>
-            <text8> instead</text8></text5>
+            <text5_type>Already have an account? <text6_type> </text6_type>
+            <a href="/login"><text7_type>Login</text7_type></a>
+            <text8_type> instead</text8_type></text5_type>
           </div>
         </div>
       </div>

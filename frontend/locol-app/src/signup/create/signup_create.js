@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import rightArrow from "./rightArrow.png";
+
 export const Signup_create = ({}) => {
     return (
         <StudentsignupRootRootRoot>
@@ -8,7 +10,10 @@ export const Signup_create = ({}) => {
                 <WhiteFlexColumn>
                     <Group>
                         <Text1>Create your student account</Text1>
-                        <Arrows src={`https://file.rendit.io/n/b1JyyRivYzZhtxkj3Hgr.svg`} />
+                        <a href = "/signup_about_you">
+                <Arrows src={rightArrow} />
+              </a>
+                        {/* <Arrows src={`https://file.rendit.io/n/b1JyyRivYzZhtxkj3Hgr.svg`} /> */}
                     </Group>
                     <Text2>Email</Text2>
                     <Element1 />
@@ -62,7 +67,9 @@ const Background = styled.div`
   background-image: url("https://file.rendit.io/n/ei8Z5OHmB22wReopZU75.svg");
 `;
 const WhiteFlexColumn = styled.div`
-  height: 406px;
+  // height: 406px;
+  height: auto;
+  width: 550px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

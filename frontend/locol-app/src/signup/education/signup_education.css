@@ -18,15 +18,28 @@
     background-size: cover;
 }
 #studenteducationRootRootRoot #background #panel {
-    height: 487px;
+    /* height: 487px; */
+
+    height: auto;
+    width: 550px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 6.16% 7.74% 6.16% 7.9%;
+    padding-bottom: 20%;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.75);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#ip2 {
+    border-radius: 25px;
+    border: 2px solid #000;
+    padding: 20px; 
+    width: 400px;
+    /* width: 200px; */
+    height: 15px;  
+    left: 10%;  
 }
 .group {
     width: 100.09%;
@@ -38,19 +51,23 @@
     margin: 0px 0px 4.75% 0px;
     padding: 1.87% 0px 1.48% 0px;
 }
-#panel1 text1 {
+#panel text1 {
     width: 24.47%;
     height: 32px;
-    left: 64.8px;
-    top: 0px;
-    position: absolute;
-    color: #262626;
+    margin: 0px 0px 0% 0%;
     font-size: 25px;
     font-weight: 700;
     font-family: Montserrat;
     line-height: 31.725001335144043px;
-    text-align: center;
     white-space: nowrap;
+    position: relative;
+    color: #262626;
+    padding-left: 20%;
+
+  /*left: 64.8px;
+  top: 0px;
+  text-align: center;
+  white-space: nowrap; */
 }
 .arrows {
     width: 100.09%;
@@ -58,6 +75,7 @@
     position: relative;
 }
 #panel text2 {
+    padding-top: 10%;
     width: 44.57%;
     height: 18px;
     margin: 0px 0px 2.37% 11.83%;
@@ -67,6 +85,7 @@
     white-space: nowrap;
 }
 #panel text3 {
+    padding-top: 10%;
     width: 28.68%;
     height: 18px;
     margin: 0px 0px 2.37% 11.83%;
@@ -76,6 +95,7 @@
     white-space: nowrap;
 }
 #panel text4 {
+    padding-top: 10%;
     width: 37.08%;
     height: 18px;
     margin: 0px 0px 2.37% 11.83%;
@@ -108,6 +128,7 @@
     white-space: nowrap;
 }
 #panel text6 {
+    padding-top: 10%;
     width: 34.16%;
     height: 18px;
     margin: 0px 0px 2.37% 11.83%;
