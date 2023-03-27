@@ -10,5 +10,5 @@ class BusinessUserSerializer(serializers.ModelSerializer):
 # old
 # class TodoSerializer(serializers.ModelSerializer):
 #    class Meta:
-#        model = Todo
+#        model =
 #        fields = ('id', 'title', 'description', 'completed')

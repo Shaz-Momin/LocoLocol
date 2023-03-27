@@ -13,5 +13,4 @@ class StudentUserSerializer(serializers.ModelSerializer):
 #old
 #class TodoSerializer(serializers.ModelSerializer):
 #    class Meta:
-#        model = Todo
 #        fields = ('id', 'title', 'description', 'completed')
