@@ -27,7 +27,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     # path('', include("django.contrib.auth.urls")),
-    path('hello-world/', views.hello_world, name='hello_world'),
+    path('login_request/', views.login_request, name='login_request'),
     # path('users/create/', UserView.as_view(), name='user_create'),
     # path('users/create/', BusView.as_view(), name='business_create')
 ]

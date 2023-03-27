@@ -19,7 +19,7 @@ export const Login = ({}) => {
 
     function sendLoginInfoToBackend() {
         // Send a POST request to the Django server
-        fetch('http://127.0.0.1:8000/hello-world/', {
+        fetch('http://127.0.0.1:8000/login_request/', {
             method: 'POST',
             withCredentials: true,
             mode: "cors",

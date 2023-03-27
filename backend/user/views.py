@@ -35,7 +35,7 @@ class UserView(viewsets.ModelViewSet):
 
 
 @csrf_exempt
-def hello_world(request):
+def login_request(request):
     if request.method == 'POST':
         # Process the data here...
         info = request.body.decode()
