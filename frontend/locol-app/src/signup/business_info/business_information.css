@@ -238,4 +238,13 @@
     font-family: Montserrat;
     box-sizing: border-box;
   }
+  #ip2 {
+    border-radius: 25px;
+    border: 2px solid #000;
+    padding: 20px; 
+    width: 400px;
+    /* width: 200px; */
+    height: 15px;  
+    left: 10%;  
+}
   

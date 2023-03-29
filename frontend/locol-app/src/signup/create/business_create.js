@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import rightArrow from "./rightArrow.png";
+
 export const BusinesssignupRootRootRoot1 = ({}) => {
   return (
     <BusinesssignupRootRootRoot>
@@ -12,30 +14,37 @@ export const BusinesssignupRootRootRoot1 = ({}) => {
       <Orange>
         <Rectangle>
           <Group>
-            <Vector4 src="https://file.rendit.io/n/2xoHjYHhK7yh2OtYdL9t.svg" />
+          <a href = "/business_services">
+                <Arrows1 src={rightArrow} />
+          </a>
+            {/* <Vector4 src="https://file.rendit.io/n/2xoHjYHhK7yh2OtYdL9t.svg" /> */}
             <CreateYourBusinessAccount>
               Create your business account
             </CreateYourBusinessAccount>
           </Group>
           <Email>Email</Email>
-          <Rectangle2 />
+          <input type="text" id="ip2"/>
+          {/* <Rectangle2 /> */}
           <MustBeSchoolEmailEndingWithEdu>
             *Must be school email ending with ‘.edu’
           </MustBeSchoolEmailEndingWithEdu>
           <CreateAPassword>Create a password</CreateAPassword>
-          <Rectangle3>
+          <input type="text" id="ip2"/>
+          {/* <Rectangle3>
             <Vector src="https://file.rendit.io/n/GMkRjlpUqekfFEDxJ0qf.svg" />
             <Vector1 src="https://file.rendit.io/n/6EQcOqrWTx1vl2wgEqfl.svg" />
-          </Rectangle3>
+          </Rectangle3> */}
           <CreateAPassword>Confirm password</CreateAPassword>
-          <Rectangle4>
+          <input type="text" id="ip2"/>
+          {/* <Rectangle4>
             <Vector2 src="https://file.rendit.io/n/GMkRjlpUqekfFEDxJ0qf.svg" />
             <Vector1 src="https://file.rendit.io/n/6EQcOqrWTx1vl2wgEqfl.svg" />
-          </Rectangle4>
-          <Group1>
-            <Rectangle1 src="https://file.rendit.io/n/HJK4ThFEzpHBZYD0ir2J.svg" />
-            <CreateAccount>Create Account</CreateAccount>
-          </Group1>
+          </Rectangle4> */}
+          {/* <Group1> */}
+            {/* <Rectangle1 src="https://file.rendit.io/n/HJK4ThFEzpHBZYD0ir2J.svg" /> */}
+            <button>Create Account</button>
+            {/* <CreateAccount>Create Account</CreateAccount> */}
+          {/* </Group1> */}
           <AlreadyHaveAnAccountLoginInstead3>
             Already have an account?
             <AlreadyHaveAnAccountLoginInstead>
@@ -55,6 +64,11 @@ export const BusinesssignupRootRootRoot1 = ({}) => {
   );
 };
 
+const Arrows1 = styled.img`
+  width: 100.09%;
+  height: 13.6px;
+  position: relative;
+`;
 const CreateAPassword = styled.div`
   margin: 0px 0px 0.4px 64px;
   font-size: 13px;
