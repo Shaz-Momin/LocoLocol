@@ -5,9 +5,8 @@ from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt, ensure_csrf_cookie
 from rest_framework import viewsets
 from rest_framework.response import Response
-
-from .serializer import UserSerializer
-from .models import User
+from .models import StudentUser, BusinessUser
+from .serializer import StudentUserSerializer, BusinessUserSerializer
 
 
 # Create your views here.
@@ -26,16 +25,47 @@ from .models import User
 # a simple way to define multiple views for a single URL pattern.
 
 # ModelViewSet: A ViewSet that provides default implementations for the CRUD operations for a model.
-class UserView(viewsets.ModelViewSet):
-    serializer_class = UserSerializer
+class StudentUserView(viewsets.ModelViewSet):
+    serializer_class = StudentUserSerializer
 
     # A queryset is a database query that returns a list of model instances. It is an
     # object that represents a set of records from a database table or view
-    queryset = User.objects.all()
+    queryset = StudentUser.objects.all()
+
+
+class BusinessUserView(viewsets.ModelViewSet):
+    serializer_class = BusinessUserSerializer
+
+    # A queryset is a database query that returns a list of model instances. It is an
+    # object that represents a set of records from a database table or view
+    queryset = BusinessUser.objects.all()
 
 
 @csrf_exempt
 def login_request(request):
+    if request.method == 'POST':
+        # Process the data here...
+        info = request.body.decode()
+
+        # convert string to dict
+        json_object = json.loads(info)
+
+        email = json_object['email']
+        password = json_object['password']
+
+        # check if user exists
+        mydata_student = StudentUser.objects.filter(email=email, password=password).values()
+        mydata_business = BusinessUser.objects.filter(email=email, password=password).values()
+
+        if mydata_student:
+            return JsonResponse({'response': 'YES, Student'})
+        if mydata_business:
+            return JsonResponse({'response': 'YES, Business'})
+        return JsonResponse({'response': 'NO'})
+
+
+@csrf_exempt
+def signup_request(request):
     if request.method == 'POST':
         # Process the data here...
         info = request.body.decode()

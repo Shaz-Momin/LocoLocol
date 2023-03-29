@@ -26,11 +26,15 @@ export const Login = ({}) => {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ email: email, password: password})
+            body: JSON.stringify({email: email, password: password})
         })
             .then(response => response.json())
-            .then(data => {console.log(data)})
-            .catch(error => {console.log(error)});
+            .then(data => {
+                console.log(data)
+            })
+            .catch(error => {
+                console.log(error)
+            });
     }
 
     const FlexColumn1Function = (e, name) => {
