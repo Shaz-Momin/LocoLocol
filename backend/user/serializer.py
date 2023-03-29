@@ -8,3 +8,9 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('username', 'password', 'email', 'description')
+
+
+# class BusUserSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = BusUser
+#         fields = ('username', 'password', 'email', 'description', 'officeLoc', 'industry', 'founded')
