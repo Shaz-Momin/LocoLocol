@@ -16,21 +16,55 @@ export const Signup_create = ({}) => {
                         {/* <Arrows src={`https://file.rendit.io/n/b1JyyRivYzZhtxkj3Hgr.svg`} /> */}
                     </Group>
                     <Text2>Email</Text2>
-                    <Element1 />
+                    <input type="text" id="ip2" />
+                    {/* <TextField
+                      required
+                      label="Type here..." 
+                      inputProps={{
+                        style: {
+                          width: "280px",
+                          borderRadius: '20px',
+                        },
+                      }}
+                      /> */}
+                    {/* <Element1 /> */}
                     <Text3>*Must be school email ending with ‘.edu’</Text3>
                     <Text4>Create a password</Text4>
-                    <FlexColumn1>
+                    <input type="text" id="ip2"/>
+                    {/* <TextField
+                      required
+                      label="Type here..." 
+                      inputProps={{
+                        style: {
+                          width: "280px",
+                          borderRadius: '20px',
+                        },
+                      }}
+                      /> */}
+                    {/* <FlexColumn1>
                         <IconsaxLineareye
                             src={`https://file.rendit.io/n/cNbO26hhK1928vFLh81s.svg`}
-                        />
-                    </FlexColumn1>
+                        /> */}
+                    {/* </FlexColumn1> */}
                     <Text5>Confirm password</Text5>
-                    <FlexColumn2>
+                    <input type="text" id="ip2"/>
+                    {/* <TextField
+                      required
+                      label="Type here..." 
+                      inputProps={{
+                        style: {
+                          width: "280px",
+                          borderRadius: '20px',
+                        },
+                      }}
+                      /> */}
+                    {/* <FlexColumn2>
                         <IconsaxLineareye
                             src={`https://file.rendit.io/n/cNbO26hhK1928vFLh81s.svg`}
                         />
-                    </FlexColumn2>
+                    </FlexColumn2> */}
                     <FlexColumn3>
+                    <button>Create Account</button>
                         <Text6>Create Account</Text6>
                     </FlexColumn3>
                     <Text7>

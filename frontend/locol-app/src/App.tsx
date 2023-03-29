@@ -35,7 +35,7 @@ const RoutesContainer = (props: {}) => {
     ["Marketplace", "/market"],
     ["Board", "/board"],
     ["Community", "/community"],
-    ["Login", "/login"],
+    ["Login", "/login"], //change and make a generic login page that asks if student/business
     ["Signup", "/signup_person"], 
     // ["Account", "/signup_account"],
     // ["Education", "/signup_education"],

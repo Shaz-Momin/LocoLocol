@@ -186,3 +186,24 @@
     font-weight: 500;
     font-family: Montserrat;
 }
+
+input {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+  }
+  #ip2_create {
+    border-radius: 25px;
+    border: 2px solid #000;
+    padding: 20px; 
+    width: 400px;
+    margin-bottom: 5%;
+    /* width: 200px; */
+    height: 15px;  
+    left: 10%;  
+}

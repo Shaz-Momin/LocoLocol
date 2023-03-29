@@ -8,21 +8,7 @@ import "./signup_about_you.css";
 function Signup_about_you() {
     return (
 
-      //     <div style={{display: 'flex', flexDirection: "row"}}>
-      //       <div style={{ flex:1 }}>
-      //         <a href = "/signup_account">
-      //           <Arrows1 src={rightArrow} />
-      //         </a>
-      //       </div>
-      //       <div style={{ flex:1 }}>
-      //         <text1>Education</text1>
-      //       </div>
-      //       <div style={{ flex:1 }}>
-      //         <a href = "/signup_about_you">
-      //           <Arrows2 src={leftArrow} />
-      //         </a>
-      //       </div>
-      //     </div>
+ 
       //     <text2>What university do you attend?</text2>
       //     <input type="text" id="ip2"/>
       //     {/* <TextField
@@ -61,7 +47,7 @@ function Signup_about_you() {
                   <div style={{display: 'flex', flexDirection: "row"}}>
                     <div style={{ flex:1 }}>
                       <a href = "/signup_education">
-                        <Arrows src={rightArrow} />
+                        <Arrows1 src={rightArrow} />
                       </a>
                     </div>
                     <div style={{ flex:1 }}>
@@ -69,7 +55,7 @@ function Signup_about_you() {
                     </div>
                     <div style={{ flex:1 }}>
                       <a href = "/signup_create">
-                        <Arrows src={leftArrow} />
+                        <Arrows2 src={leftArrow} />
                       </a>
                     </div>
                   </div>
@@ -77,11 +63,23 @@ function Signup_about_you() {
                         <Text1>About You</Text1>
                         <Arrows src={`https://file.rendit.io/n/p5OSPxeFyL5WRdnMsZ8G.svg`} />
                     </Group> */}
-                    <Text2>Select Skills</Text2>
-                    <Dropshadow>
+                    <text2_about>Select Skills</text2_about>
+                    <input type="text" id="ip2_about"/>
+                        {/* <TextField
+                          required
+                          label="Type here..." 
+                          inputProps={{
+                            style: {
+                              width: "280px",
+                              borderRadius: '20px',
+                            },
+                          }}
+                          /> */}
+                    {/* <Dropshadow>
+                    
                         <Text3>Select . . .</Text3>
-                    </Dropshadow>
-                    <Text4>Areas of Interest</Text4>
+                    </Dropshadow> */}
+                    <text4_about>Areas of Interest</text4_about>
                     <FlexColumn1>
                         <Group1>
                             {/* <Element1 /> */}
@@ -181,6 +179,18 @@ function Signup_about_you() {
 
 export default Signup_about_you;
 
+
+const Arrows1 = styled.img`
+  width: 100.09%;
+  height: 13.6px;
+  position: relative;
+`;
+const Arrows2 = styled.img`
+  width: 100.09%;
+  height: 13.6px;
+  position: relative;
+  left: 350px;
+`;
 const StudentsignupRootRootRoot = styled.div`
   background-color: #ffffff;
   overflow: hidden;
@@ -221,15 +231,6 @@ const Arrows = styled.img`
   height: 13.6px;
   position: relative;
 `;
-const Text2 = styled.div`
-  width: 16.8%;
-  height: 18px;
-  margin: 0px 0px 2.37% 11.83%;
-  font-size: 15px;
-  font-weight: 600;
-  font-family: Montserrat;
-  white-space: nowrap;
-`;
 const Dropshadow = styled.div`
   display: flex;
   flex-direction: column;
@@ -250,15 +251,6 @@ const Text3 = styled.div`
   color: rgba(0, 0, 0, 0.3);
   font-size: 11px;
   font-weight: 500;
-  font-family: Montserrat;
-  white-space: nowrap;
-`;
-const Text4 = styled.div`
-  width: 23.2%;
-  height: 18px;
-  margin: 0px 0px 2.37% 11.83%;
-  font-size: 15px;
-  font-weight: 600;
   font-family: Montserrat;
   white-space: nowrap;
 `;
