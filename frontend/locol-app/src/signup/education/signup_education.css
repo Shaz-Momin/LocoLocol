@@ -27,7 +27,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding: 6.16% 7.74% 6.16% 7.9%;
-    padding-bottom: 20%;
+    padding-bottom: 15%;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.75);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -75,7 +75,7 @@
     position: relative;
 }
 #panel text2 {
-    padding-top: 10%;
+    padding-top: 5%;
     width: 44.57%;
     height: 18px;
     margin: 0px 0px 2.37% 11.83%;
@@ -85,7 +85,7 @@
     white-space: nowrap;
 }
 #panel text3 {
-    padding-top: 10%;
+    padding-top: 5%;
     width: 28.68%;
     height: 18px;
     margin: 0px 0px 2.37% 11.83%;
@@ -95,7 +95,7 @@
     white-space: nowrap;
 }
 #panel text4 {
-    padding-top: 10%;
+    padding-top: 5%;
     width: 37.08%;
     height: 18px;
     margin: 0px 0px 2.37% 11.83%;
@@ -128,7 +128,7 @@
     white-space: nowrap;
 }
 #panel text6 {
-    padding-top: 10%;
+    padding-top: 5%;
     width: 34.16%;
     height: 18px;
     margin: 0px 0px 2.37% 11.83%;
