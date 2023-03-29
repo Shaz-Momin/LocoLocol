@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
+import leftArrow from "./leftArrow.png";
+import rightArrow from "./rightArrow.png";
+
 export const BusinesssignupRootRootRootRoot = ({}) => {
   return (
     <BusinesssignupRootRoot>
@@ -11,11 +14,17 @@ export const BusinesssignupRootRootRootRoot = ({}) => {
       <OrangeCircle1 src="https://file.rendit.io/n/zvM4EFxPXpy0dAjDiyWO.svg" />
       <Orange>
         <Group>
-          <Vector src="https://file.rendit.io/n/5mXKwoV7Y7kELSCNUqRI.svg" />
+        <a href = "/business_information">
+                <Arrows1 src={rightArrow} />
+          </a>
+          {/* <Vector src="https://file.rendit.io/n/5mXKwoV7Y7kELSCNUqRI.svg" /> */}
           <WhatServicesInterestYou>
             What services interest you?
           </WhatServicesInterestYou>
-          <Vector1 src="https://file.rendit.io/n/GabWUbczS9fKLTZUD0Fy.svg" />
+          <a href = "/business_create">
+                <Arrows2 src={leftArrow} />
+          </a>
+          {/* <Vector1 src="https://file.rendit.io/n/GabWUbczS9fKLTZUD0Fy.svg" /> */}
         </Group>
         <Panel>
           <Rectangle>
@@ -73,6 +82,17 @@ export const BusinesssignupRootRootRootRoot = ({}) => {
   );
 };
 
+const Arrows1 = styled.img`
+  width: 100.09%;
+  height: 13.6px;
+  position: relative;
+`;
+const Arrows2 = styled.img`
+  width: 100.09%;
+  height: 13.6px;
+  position: relative;
+  left: 150px;
+`;
 const BusinesssignupRootRoot = styled.div`
   position: relative;
   display: flex;

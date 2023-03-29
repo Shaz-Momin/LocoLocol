@@ -17,35 +17,44 @@ export const BusinesssignupRootRoot1 = ({}) => {
       <Orange>
         <Panel>
           <Group>
-          {/* <a href = "/signup_account">
-                <Arrows src={rightArrow} />
-              </a> */}
-            <a>
+          <a href = "/business_services">
+                <Arrows src={leftArrow} />
+          </a>
+            {/* <a>
                 <Image1 src={`https://file.rendit.io/n/AhRiaIGeDRHXTwKWSZoW.svg`} />
-            </a>
+            </a> */}
             <Text5>Basic Info</Text5>
-            <Image2 src={`https://file.rendit.io/n/fBcUy0rgJxCRSey68dUO.svg`} />
+            {/* <Image2 src={`https://file.rendit.io/n/fBcUy0rgJxCRSey68dUO.svg`} /> */}
           </Group>
           <Text2>Where is your office located?</Text2>
-          <Dropshadow>
+          <input type="text" id="ip2"/>
+          {/* <Dropshadow>
             <Element1>
               <TypeHere>Type here . . . </TypeHere>
             </Element1>
-          </Dropshadow>
+          </Dropshadow> */}
           <Text3>What industry are you part of?</Text3>
-          <Element2>
+          {/* <Element2>
             <TypeHere1>Type here . . . </TypeHere1>
-          </Element2>
+          </Element2> */}
+          <input type="text" id="ip2"/>
           <Text4>When was the company founded?</Text4>
-          <Element3>
+          {/* <Element3>
             <Text1>Enter date</Text1>
-          </Element3>
+          </Element3> */}
+          <input type="text" id="ip2"/>
         </Panel>
       </Orange>
     </BusinesssignupRootRoot>
   );
 };
 
+const Arrows = styled.img`
+  width: 100.09%;
+  height: 13.6px;
+  position: relative;
+  left: 450px;
+`;
 const BusinesssignupRootRoot = styled.div`
   position: relative;
   display: flex;
