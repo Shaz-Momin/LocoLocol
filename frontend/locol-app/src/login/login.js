@@ -5,7 +5,7 @@ import Visibility from "@mui/icons-material/Visibility";
 
 import "./login.css";
 
-export const LoginStudent = ({}) => {
+export const Login = ({}) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -26,11 +26,15 @@ export const LoginStudent = ({}) => {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ email: email, password: password})
+            body: JSON.stringify({email: email, password: password})
         })
             .then(response => response.json())
-            .then(data => {console.log(data)})
-            .catch(error => {console.log(error)});
+            .then(data => {
+                console.log(data)
+            })
+            .catch(error => {
+                console.log(error)
+            });
     }
 
     const FlexColumn1Function = (e, name) => {

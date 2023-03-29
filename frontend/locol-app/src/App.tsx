@@ -6,8 +6,7 @@ import  Homepage  from "./homepage/homepage";
 import { Marketplace } from "./marketplace/marketplace";
 import { Board } from "./board/board";
 import { Community } from "./community/community";
-import { LoginStudent } from "./login/login";
-import { LoginBusiness } from "./login/login2";
+import { Login } from "./login/login";
 import { Signup_what_are_you } from "./signup/what_are_you/signup_what_are_you";
 import { BusinesssignupRootRootRootRoot } from "./signup/services_interest/business_services";
 import { BusinesssignupRootRootRoot1 } from "./signup/create/business_create";
@@ -36,7 +35,7 @@ const RoutesContainer = (props: {}) => {
     ["Marketplace", "/market"],
     ["Board", "/board"],
     ["Community", "/community"],
-    ["Login", "/login_student"],
+    ["Login", "/login"],
     ["Signup", "/signup_person"], 
     // ["Account", "/signup_account"],
     // ["Education", "/signup_education"],
@@ -63,8 +62,7 @@ const RoutesContainer = (props: {}) => {
           <Route path={"/market"} element={<Marketplace />} />
           <Route path={"/board"} element={<Board />} />
           <Route path={"/community"} element={<Community />} />
-          <Route path={"/login_student"} element={<LoginStudent/>} />
-          <Route path={"/login_business"} element={<LoginBusiness/>} />
+          <Route path={"/login"} element={<Login/>} />
           <Route path={"/signup_person"} element={<Signup_what_are_you/>} />
           <Route path={"/signup_account"} element={<Signup_type_of_account/>} />
           <Route path={"/signup_education"} element={<Signup_education/>} />
