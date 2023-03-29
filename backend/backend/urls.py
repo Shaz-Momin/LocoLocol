@@ -18,10 +18,13 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
 from user import views
+
 # from backend.user.views import UserView, BusView
 
 router = routers.DefaultRouter()
-router.register(r'users', views.UserView, 'user')
+router.register(r'studentusers', views.StudentUserView, 'studentuser')
+router.register(r'businessusers', views.BusinessUserView, 'businessuser')
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
