@@ -5,7 +5,7 @@ import Visibility from "@mui/icons-material/Visibility";
 
 import "./login.css";
 
-export const LoginStudent = ({}) => {
+export const Login = ({}) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
