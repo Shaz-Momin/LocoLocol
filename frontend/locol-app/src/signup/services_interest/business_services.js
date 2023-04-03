@@ -3,82 +3,112 @@ import styled from "styled-components";
 
 import leftArrow from "./leftArrow.png";
 import rightArrow from "./rightArrow.png";
+import "./business_services.css";
 
 export const BusinesssignupRootRootRootRoot = ({}) => {
   return (
-    <BusinesssignupRootRoot>
+    <div id="businesssignupRootRootRoot">
+      <div id="background_services">
+        <div id="panel_services">
+            <div style={{display: 'flex', flexDirection: "row"}}>
+                <div style={{ flex:1 }}>
+                  <a href = "/business_information">
+                    <Arrows1 src={rightArrow} />
+                  </a>
+                </div>
+              <div style={{ flex:1 }}>
+                <text1_bus>What services interest you?</text1_bus>
+              </div>
+              <div style={{ flex:1 }}>
+                <a href = "/business_create">
+                  <Arrows2 src={leftArrow} />
+                </a>
+              </div>
+            </div>
       <Elements1 />
       <YellowCircle />
       <BlueCircle src="https://file.rendit.io/n/Ig94XTX6YBoUC6z99jNS.svg" />
       <OrangeCircle src="https://file.rendit.io/n/WcWzCIwoML6P8gGXCIOu.svg" />
       <OrangeCircle1 src="https://file.rendit.io/n/zvM4EFxPXpy0dAjDiyWO.svg" />
       <Orange>
-        <Group>
-        <a href = "/business_information">
-                <Arrows1 src={rightArrow} />
-          </a>
-          {/* <Vector src="https://file.rendit.io/n/5mXKwoV7Y7kELSCNUqRI.svg" /> */}
-          <WhatServicesInterestYou>
-            What services interest you?
-          </WhatServicesInterestYou>
-          <a href = "/business_create">
-                <Arrows2 src={leftArrow} />
-          </a>
-          {/* <Vector1 src="https://file.rendit.io/n/GabWUbczS9fKLTZUD0Fy.svg" /> */}
-        </Group>
-        <Panel>
-          <Rectangle>
+
+        <div id = "Panel">
             <Group1>
-              <Rectangle1 />
-              <Copywriting>Copywriting</Copywriting>
+              <form>
+                <div>
+                    <label><input type="checkbox" /> Copywriting </label>
+                  </div>
+                </form>
             </Group1>
             <Line />
             <Group2>
-              <Rectangle2 />
-              <EmailMarketing>Email Marketing</EmailMarketing>
+              <form>
+                <div>
+                    <label><input type="checkbox" /> Email Marketing </label>
+                  </div>
+                </form>
             </Group2>
             <Line1 />
             <Group3>
-              <Rectangle3 />
-              <GraphicDesign>Graphic Design</GraphicDesign>
+                <form>
+                <div>
+                    <label><input type="checkbox" /> Graphic Design </label>
+                  </div>
+                </form>
             </Group3>
+            <Line3 />
             <Group4>
-              <Rectangle4 />
-              <MarketingStrategy>Marketing Strategy</MarketingStrategy>
+              <form>
+                <div>
+                    <label><input type="checkbox" /> Marketing Stategy </label>
+                  </div>
+                </form>
             </Group4>
             <Line3 />
             <Group5>
-              <Rectangle5 />
-              <VideoMarketing>Video Marketing</VideoMarketing>
+              <form>
+                <div>
+                    <label><input type="checkbox" /> Video Marketing </label>
+                  </div>
+                </form>
             </Group5>
             <Line4 />
             <Group6>
-              <Rectangle6 />
-              <SearchEngineOptimization>
-                Search Engine Optimization
-              </SearchEngineOptimization>
+              <form>
+                <div>
+                    <label><input type="checkbox" /> Search Engine Optimization </label>
+                  </div>
+                </form>
             </Group6>
             <Line5 />
             <Group7>
-              <Rectangle7 />
-              <SocialMediaMarketing>
-                Social Media Marketing
-              </SocialMediaMarketing>
+              <form>
+                <div>
+                    <label><input type="checkbox" /> Social Media Marketing </label>
+                  </div>
+                </form>
             </Group7>
             <Line6 />
             <Group8>
-              <Rectangle8 />
-              <WebAnalytics>Web Analytics</WebAnalytics>
+              <form>
+                <div>
+                    <label><input type="checkbox" /> Web Analytics </label>
+                  </div>
+                </form>
             </Group8>
             <Line7 />
             <Group9>
-              <Rectangle9 />
-              <WebDevelopment>Web Development</WebDevelopment>
+              <form>
+                <div>
+                    <label><input type="checkbox" /> Web Development </label>
+                  </div>
+                </form>
             </Group9>
-          </Rectangle>
-        </Panel>
-      </Orange>
-    </BusinesssignupRootRoot>
+        </div>
+      </Orange> 
+        </div> 
+      </div>
+    </div>
   );
 };
 
@@ -194,17 +224,6 @@ const Vector = styled.img`
   margin: 11px 12px 8.86px 0px;
   box-sizing: border-box;
 `;
-const WhatServicesInterestYou = styled.div`
-  align-self: flex-start;
-  color: #262626;
-  font-size: 25px;
-  font-weight: 700;
-  font-family: Montserrat;
-  line-height: 31.725001335144043px;
-  text-align: center;
-  white-space: nowrap;
-  box-sizing: border-box;
-`;
 const Vector1 = styled.img`
   width: 4.13%;
   min-width: 0px;
@@ -214,17 +233,20 @@ const Vector1 = styled.img`
   margin: 11px 0px 8.86px 0px;
   box-sizing: border-box;
 `;
-const Panel = styled.div`
-  width: 649px;
+const FlexColumn1 = styled.div`
+  height: 299px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-self: flex-start;
-  padding: 126px 115px 195px 115px;
+  align-self: center;
+  align-items: flex-start;
+  padding: 3.65% 4.93% 3.09% 3.11%;
+  border-width: 1px;
   border-radius: 20px;
-  box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.75);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-style: solid;
+  border-color: #bdbdbd;
+  box-shadow: 0px 5px 25px 0px #02375f;
 `;
 const Rectangle = styled.div`
   width: 418px;

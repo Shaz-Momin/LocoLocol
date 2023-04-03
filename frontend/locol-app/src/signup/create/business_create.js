@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import rightArrow from "./rightArrow.png";
+import "./business_create.css"; 
 
 export const BusinesssignupRootRootRoot1 = ({}) => {
   return (
@@ -42,7 +43,10 @@ export const BusinesssignupRootRootRoot1 = ({}) => {
           </Rectangle4> */}
           {/* <Group1> */}
             {/* <Rectangle1 src="https://file.rendit.io/n/HJK4ThFEzpHBZYD0ir2J.svg" /> */}
-            <button>Create Account</button>
+            <form action = "/login">
+              <input type="submit" value="Create Account" class = "button"/>
+            </form>
+            {/* <button>Create Account</button> */}
             {/* <CreateAccount>Create Account</CreateAccount> */}
           {/* </Group1> */}
           <AlreadyHaveAnAccountLoginInstead3>

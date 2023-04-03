@@ -1,0 +1,63 @@
+#businesssignupRootRootRoot {
+    background-color: #ffffff;
+    overflow: hidden;
+}
+#businesssignupRootRootRoot #background_services {
+    /* background-color: #aeeaaa; */
+    width: auto;
+    /* overflow: hidden; */
+    /* height: 668px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 13.13% 27.5% 13.13% 27.43%;
+    /* background-size: cover; */
+    background: url("https://file.rendit.io/n/4eqxKUac0wAhTiG8QL6c.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#businesssignupRootRootRoot #background_services #panel_services {
+    /* height: 487px; */
+
+    height: auto;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 6.16% 7.74% 6.16% 7.9%;
+    padding-bottom: 15%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#businesssignupRootRootRoot #background_services #Panel {
+  width: 649px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: flex-start;
+  padding: 126px 115px 195px 115px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#panel_services text1_bus{
+    align-self: flex-start;
+    width: 25.02%;
+    height: 32px;
+    margin: 0px 0px 0% 0%;
+    top: 0px;
+    color: #262626;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: Montserrat;
+    line-height: 31.725001335144043px;
+    text-align: center;
+    position: relative;
+    white-space: nowrap;
+    padding-left: 20%;
+    box-sizing: border-box;
+}
