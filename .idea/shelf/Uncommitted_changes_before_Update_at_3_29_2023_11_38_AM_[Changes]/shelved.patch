@@ -1,0 +1,43 @@
+Index: frontend/locol-app/src/signup/what_are_you/signup_what_are_you.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from \"react\";\r\nimport styled from \"styled-components\";\r\n\r\nimport \"./signup_whatareyou.css\";\r\n\r\nexport const Signup_what_are_you = ({}) => {\r\n    return (\r\n      <div id=\"signupRootRootRoot\">\r\n        <div id=\"background\">\r\n          <div id=\"panel\">\r\n            <text1_what>Welcome to Locol!</text1_what>\r\n            <text2_what>What are you?</text2_what>\r\n            <a href=\"/signup_account\">\r\n              {/* <button>\r\n                <text3>Student</text3>\r\n              </button>\r\n            </a> */}\r\n            <div id=\"button\">\r\n              <text3_what>Student</text3_what>\r\n            </div>\r\n          </a>\r\n          <a href=\"\">\r\n            <div id=\"button\">\r\n              <text4_what>Business Owner</text4_what>\r\n            </div>\r\n            </a>\r\n            <text5_what>Already have an account? <text6_what> </text6_what>\r\n            <a href=\"/login\"><text7_what>Login</text7_what></a>\r\n            <text8_what> instead</text8_what></text5_what>\r\n          </div>\r\n\r\n        </div>\r\n      </div>\r\n    );\r\n};\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/frontend/locol-app/src/signup/what_are_you/signup_what_are_you.js b/frontend/locol-app/src/signup/what_are_you/signup_what_are_you.js
+--- a/frontend/locol-app/src/signup/what_are_you/signup_what_are_you.js	(revision 79efbbfef881d04885859ce86b692fe0f0c22a45)
++++ b/frontend/locol-app/src/signup/what_are_you/signup_what_are_you.js	(date 1680107028345)
+@@ -19,7 +19,7 @@
+               <text3_what>Student</text3_what>
+             </div>
+           </a>
+-          <a href="">
++          <a href="/business_information">
+             <div id="button">
+               <text4_what>Business Owner</text4_what>
+             </div>
+Index: backend/studentuser/models.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from django.db import models\r\n\r\n# Create your models here.\r\nclass StudentUser(models.Model):\r\n    username = models.CharField(max_length=120)\r\n    password = models.CharField(max_length=120)\r\n    email = models.TextField()\r\n    description = models.CharField(max_length=120)\r\n    description = models.TextField(max_length=500, blank=True)\r\n    university = models.CharField(max_length=120)\r\n    study = models.CharField(max_length=120)\r\n    classification = models.CharField(max_length=120)\r\n    graduatedate = models.CharField(max_length=120)\r\n    created_at = models.DateTimeField(auto_now_add=True)\r\n    updated_at = models.DateTimeField(auto_now=True)\r\n\r\n    # skills = models.TextField()\r\n    def _str_(self):\r\n        return self.username
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/backend/studentuser/models.py b/backend/studentuser/models.py
+--- a/backend/studentuser/models.py	(revision 79efbbfef881d04885859ce86b692fe0f0c22a45)
++++ b/backend/studentuser/models.py	(date 1680105990190)
+@@ -1,5 +1,6 @@
+ from django.db import models
+ 
++
+ # Create your models here.
+ class StudentUser(models.Model):
+     username = models.CharField(max_length=120)
+@@ -16,4 +17,4 @@
+ 
+     # skills = models.TextField()
+     def _str_(self):
+-        return self.username
+\ No newline at end of file
++        return self.username

@@ -20,6 +20,7 @@ import { Services } from "./services/services";
 import { Student_profile } from "./student_profile/student_profile";
 import { Business_profile } from "./business_profile/business_profile";
 import styled from "styled-components";
+import { withAuthenticator } from 'aws-amplify-react';
 
 
 const RoutesContainer = (props: {}) => {
@@ -91,4 +92,4 @@ function App() {
 }
 
 
-export default App;
+export default withAuthenticator(App);
