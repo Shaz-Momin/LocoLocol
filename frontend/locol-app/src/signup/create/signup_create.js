@@ -64,8 +64,11 @@ export const Signup_create = ({}) => {
                         />
                     </FlexColumn2> */}
                     <FlexColumn3>
-                    <button>Create Account</button>
-                        <Text6>Create Account</Text6>
+                    <form action = "/login">
+                      <input type="submit" value="Create Account" class = "button"/>
+                    </form>
+                    {/* <button>Create Account</button> */}
+                        {/* <Text6>Create Account</Text6> */}
                     </FlexColumn3>
                     <Text7>
                         Already have an account?<Text8> </Text8>

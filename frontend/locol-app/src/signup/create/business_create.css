@@ -7,3 +7,15 @@
     height: 15px;  
     left: 10%;  
 }
+.button {
+    background: url("https://file.rendit.io/n/HJK4ThFEzpHBZYD0ir2J.svg");
+    border: none;
+    color: white;
+    padding-bottom: 20%;
+    padding: 20px 124px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    left: 60%;
+  }
