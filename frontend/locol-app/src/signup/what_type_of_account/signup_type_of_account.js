@@ -1,10 +1,35 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
 
 import "./signup_type_of_account.css";
 
 
 export const Signup_type_of_account = ({}) => {
+  const[type, setType] = useState('');
+
+  function changeType(val) {
+    setType(val)
+  }
+
+  function sendTypeInfoToBackend() {
+    // Send a POST request to the Django server
+    fetch('http://127.0.0.1:8000/signup_request/', {
+      method: 'POST',
+      withCredentials: true,
+      mode: "cors",
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({type: type})
+  })
+      .then(response => response.json())
+      .then(data => {
+          console.log(data)
+      })
+      .catch(error => {
+          console.log(error)
+      });
+  }
     return (
       <div id = "studentsignupRootRootRoot">
         <div id = "background">
@@ -12,12 +37,12 @@ export const Signup_type_of_account = ({}) => {
             <text1_type>Welcome to Locol!</text1_type>
             <text2_type>What type of account are you seeking?</text2_type>
             <a href="/signup_education">
-              <div id="button">
+              <div id="button" onClick={(e) => changeType(e.target.value)}>
                 <text3_type>Student account</text3_type>
               </div>
             </a>
           <a href="/business_information">
-            <div id="button">
+            <div id="button" onClick={(e) => changeType(e.target.value)}>
               <text4_type>Business account</text4_type>
             </div>
             </a>

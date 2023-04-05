@@ -9,8 +9,7 @@ export const BusinesssignupRootRootRootRoot = ({}) => {
   return (
     <div id="businesssignupRootRootRoot">
       <div id="background_services">
-        <div id="panel_services">
-            <div style={{display: 'flex', flexDirection: "row"}}>
+        <div style={{display: 'flex', flexDirection: "row"}}>
                 <div style={{ flex:1 }}>
                   <a href = "/business_information">
                     <Arrows1 src={rightArrow} />
@@ -25,12 +24,12 @@ export const BusinesssignupRootRootRootRoot = ({}) => {
                 </a>
               </div>
             </div>
-      <Elements1 />
+        <div id="panel_services">
+      {/* <Elements1 /> */}
       <YellowCircle />
       <BlueCircle src="https://file.rendit.io/n/Ig94XTX6YBoUC6z99jNS.svg" />
       <OrangeCircle src="https://file.rendit.io/n/WcWzCIwoML6P8gGXCIOu.svg" />
       <OrangeCircle1 src="https://file.rendit.io/n/zvM4EFxPXpy0dAjDiyWO.svg" />
-      <Orange>
 
         <div id = "Panel">
             <Group1>
@@ -105,7 +104,6 @@ export const BusinesssignupRootRootRootRoot = ({}) => {
                 </form>
             </Group9>
         </div>
-      </Orange> 
         </div> 
       </div>
     </div>
