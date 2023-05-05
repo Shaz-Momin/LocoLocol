@@ -18,9 +18,22 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
-    "src"
+    "src",
+    "app/login",
+    "app/page.js",
+    "app/layout.tsx",
+    ".next/types/**/*.ts"
+, "components/Navbar.tsx"  ],
+  "exclude": [
+    "node_modules"
   ]
 }
