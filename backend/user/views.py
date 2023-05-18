@@ -54,8 +54,10 @@ def login_request(request):
         password = json_object['password']
 
         # check if user exists
-        mydata_student = StudentUser.objects.filter(email=email, password=password).values()
-        mydata_business = BusinessUser.objects.filter(email=email, password=password).values()
+        mydata_student = StudentUser.objects.filter(
+            email=email, password=password).values()
+        mydata_business = BusinessUser.objects.filter(
+            email=email, password=password).values()
 
         if mydata_student:
             return JsonResponse({'response': 'YES, Student'})
@@ -69,17 +71,22 @@ def signup_request(request):
     if request.method == 'POST':
         # Process the data here...
         info = request.body.decode()
+        print("test")
 
         # convert string to dict
         json_object = json.loads(info)
 
-        email = json_object['email']
-        password = json_object['password']
+        print(json_object)
+
+        type_ = json_object['type']
+        #  email = json_object['email']
+        #  password = json_object['password']
 
         # check if user exists
-        mydata = User.objects.filter(email=email, password=password).values()
+        # mydata = StudentUser.objects.filter(email=email, password=password).values()
 
-        if mydata:
-            return JsonResponse({'response': 'YES'})
-        else:
-            return JsonResponse({'response': 'NO'})
+        # if mydata:
+        #     return JsonResponse({'response': 'YES'})
+        # else:
+        #     return JsonResponse({'response': 'NO'})
+        return "YES"

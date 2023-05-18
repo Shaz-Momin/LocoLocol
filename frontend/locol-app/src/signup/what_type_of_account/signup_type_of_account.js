@@ -9,6 +9,7 @@ export const Signup_type_of_account = ({}) => {
 
   function changeType(val) {
     setType(val)
+    sendTypeInfoToBackend;
   }
 
   function sendTypeInfoToBackend() {
@@ -36,7 +37,7 @@ export const Signup_type_of_account = ({}) => {
           <div id = "panel">
             <text1_type>Welcome to Locol!</text1_type>
             <text2_type>What type of account are you seeking?</text2_type>
-            <a href="/signup_education">
+            <a href="/signup_education" onClick={sendLoginInfoToBackend}>
               <div id="button" onClick={(e) => changeType(e.target.value)}>
                 <text3_type>Student account</text3_type>
               </div>
