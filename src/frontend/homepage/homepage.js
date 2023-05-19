@@ -5,8 +5,8 @@ import { Navigate, redirect } from "react-router-dom";
 // import { routeManager } from "../../routeManager";
 import { render } from "@testing-library/react";
 
-// export const Homepage = ({}) => {
-  function homepage() {
+const Homepage = ({}) => {
+  // function homepage() {
     return (
       <div id = "HomepgSTYLEDRootRoot">
         <div className = "Group36">
@@ -113,6 +113,11 @@ import { render } from "@testing-library/react";
             </div>
         </div>
       </div>
+
+
+//ignore 
+
+
 //             <Group36>
 //                 <FlexRow>
 //                     <Group1>
@@ -505,7 +510,7 @@ import { render } from "@testing-library/react";
     );
 }
 
-export default homepage;
+export default Homepage;
 // };
 
 
