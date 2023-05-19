@@ -1,34 +1,43 @@
 import './App.css'
-import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom'
-import { Navbar } from './Navbar';
+import {BrowserRouter as Router, Routes, Route, NavLink} from 'react-router-dom'
+import {Navbar} from './Navbar';
 import Homepage from './frontend/homepage/homepage';
 import Login from './frontend/login/login';
-import { Marketplace } from './frontend/marketplace/marketplace';
-import { Board } from './frontend/board/board';
-import { Community } from './frontend/community/community';
+import {Marketplace} from './frontend/marketplace/marketplace';
+import {Board} from './frontend/board/board';
+import {Community} from './frontend/community/community';
+import {Auth} from "aws-amplify"
+import logo from './logo.svg';
+
 
 function App() {
     return (
-    <div className = "App">
-        {/* <Navbar options={links} currPath={path} simple={onLoginPage}/> */}
+        <>
+            <div className="App">
+                {/* <Navbar options={links} currPath={path} simple={onLoginPage}/> */}
 
-        <Router>
-            <div>
-                <NavLink exact activeClassName="active" to="/">Homepage</NavLink>
-                <NavLink activeClassName="active" to="/login">Login</NavLink>
-                <NavLink activeClassName="active" to="/marketplace">Marketplace</NavLink>
-                <NavLink activeClassName="active" to="/board">Board</NavLink>
-                <NavLink activeClassName="active" to="/community">Community</NavLink>
+                <Router>
+                    <div>
+                        <NavLink exact activeClassName="active" to="/">Homepage</NavLink>
+                        <NavLink activeClassName="active" to="/login">Login</NavLink>
+                        <NavLink activeClassName="active" to="/marketplace">Marketplace</NavLink>
+                        <NavLink activeClassName="active" to="/board">Board</NavLink>
+                        <NavLink activeClassName="active" to="/community">Community</NavLink>
+                    </div>
+                    <Routes>
+                        <Route path="/" element={<Homepage/>}></Route>
+                        <Route path="/login" element={<Login/>}></Route>
+                        <Route path="/marketplace" element={<Marketplace/>}></Route>
+                        <Route path="/board" element={<Board/>}></Route>
+                        <Route path="/community" element={<Community/>}></Route>
+                    </Routes>
+                </Router>
             </div>
-            <Routes>
-                <Route path="/" element={<Homepage />}></Route>
-                <Route path="/login" element={<Login />}></Route>
-                <Route path="/marketplace" element={<Marketplace />}></Route>
-                <Route path="/board" element={<Board />}></Route>
-                <Route path="/community" element={<Community />}></Route>
-            </Routes>
-        </Router>
-    </div>
+            <header className="App-header">
+                <img src={logo} className="App-logo" alt="logo"/>
+                <button onClick={() => Auth.signOut()}>Log Out</button>
+            </header>
+        </>
     );
 }
 

@@ -1,9 +1,9 @@
-import { useEffect } from "react";
+import {useEffect} from "react";
 
-import { Authenticator, useAuthenticator, View } from '@aws-amplify/ui-react';
+import {Authenticator, useAuthenticator, View} from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
-import { useNavigate, useLocation } from 'react-router';
+import {useNavigate, useLocation} from 'react-router';
 
 const Login = ({}) => {
     return (
@@ -20,7 +20,6 @@ const Login = ({}) => {
 };
 
 export default Login;
-
 
 
 //my prev code
